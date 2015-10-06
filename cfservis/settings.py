@@ -49,8 +49,9 @@ NEWSPIDER_MODULE = 'cfservis.spiders'
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
+
 #DOWNLOADER_MIDDLEWARES = {
-#    'cfservis.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'scrapy.contrib.downloadermiddleware.httpauth.HttpAuthMiddleware': None,
 #}
 
 # Enable or disable extensions

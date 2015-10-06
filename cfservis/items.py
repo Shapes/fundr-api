@@ -19,7 +19,7 @@ categories.append("comics")
 categories.append("dance")
 categories.append("design")
 categories.append("fashion")
-categories.append("music & Audio")
+categories.append("music") # music & audio
 categories.append("games")
 categories.append("food")
 categories.append("photography")

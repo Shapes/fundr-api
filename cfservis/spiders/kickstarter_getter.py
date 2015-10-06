@@ -10,6 +10,7 @@ import re
 
 
 class KickstarterSpider(scrapy.Spider):
+
     name = "kickstarter_getter"
     allowed_domains = ["kickstarter.com"]
     start_urls = [
