@@ -30,7 +30,7 @@ class App_Project(MySQLModel):
     img_url = CharField(max_length=256)
     location = CharField(max_length=256)
     end = CharField(max_length=256)
-    pledged = IntegerField(default=0)
+    pledged = IntegerField()
     goal = IntegerField()
     currency = CharField(max_length=5)
     date_modified = DateTimeField()
@@ -70,6 +70,7 @@ class MySQLStorePipeline(object):
 
     def update_entry(self, item):
         project = App_Project.get(App_Project.id == item['id'])
+        print item['pledged']
         project.pledged = item['pledged']
         project.goal = item['goal']
         project.date_modified = datetime.now()

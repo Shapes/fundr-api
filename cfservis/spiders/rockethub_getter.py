@@ -37,8 +37,8 @@ class RockethubSpider(scrapy.Spider):
     """
 
     def __init__(self, category=None, type=None, *args, **kwargs):
-        self.driver = webdriver.Firefox()
-        #self.driver = webdriver.PhantomJS()
+        #self.driver = webdriver.Firefox()
+        self.driver = webdriver.PhantomJS()
         self.category = category
         self.type = type
         super(RockethubSpider, self).__init__(*args, **kwargs)
@@ -60,7 +60,7 @@ class RockethubSpider(scrapy.Spider):
         time.sleep(3)  # wait for data to load
 
         # show hidden overlays, inject some js code
-        # TODO: Do i need this?
+        # TODO: Do i need this JS injection?
         injection_script = "elements = document.getElementsByClassName('overlay');" \
                            "for (var i=0;i<elements.length;i++){ elements[i].style.display = 'block'; }"
         self.driver.execute_script(injection_script)

@@ -380,3 +380,16 @@ class IndiegogoUpItem(scrapy.Item):
         output_processor=TakeFirst()
     )
 
+class RockethubUpItem(scrapy.Item):
+    id = scrapy.Field(
+        input_processor=MapCompose(),
+        output_processor=TakeFirst()
+    )
+    pledged = scrapy.Field(
+        input_processor=MapCompose(parse_money_ig),
+        output_processor=TakeFirst()
+    )
+    goal = scrapy.Field(
+        input_processor=MapCompose(parse_money_ig),
+        output_processor=TakeFirst()
+    )

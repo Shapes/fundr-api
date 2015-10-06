@@ -35,12 +35,24 @@ class KickstarterSpiderUpdater(scrapy.Spider):
 
         il = ItemLoader(item=KickstarterUpItem())
 
-        goal = str(response.xpath('//*[@id="stats"]/div/div[2]/span/span[1]/text()').extract())
-        il.add_value('goal', goal)
+        goal_object = response.xpath('//*[@id="stats"]/div/div[2]/span/span[1]/text()').extract()
+        if goal_object is not None:
+            goal = str(goal_object)
+            il.add_value('goal', goal)
+        else:
+            il.add_value('goal', unicode(-1))
 
         # TODO: nr. of backers
-        pledged = str(response.css('#pledged data::text').extract())
-        il.add_value('pledged', pledged)
+
+        pledged_object = response.css('#pledged data::text').extract()
+        if pledged_object is not None:
+            pledged = str(pledged_object)
+            il.add_value('pledged', pledged)
+        else:
+            il.add_value('pledged', unicode(-1))
+
+
+
 
         il.add_value('id', self.pid)
 
