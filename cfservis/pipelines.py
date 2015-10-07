@@ -5,13 +5,15 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
+
+from __future__ import print_function
 import os
-import sys
+import re
 import MySQLdb
 from peewee import *
 from playhouse.db_url import connect
 from datetime import datetime
-
+from colorama import Fore
 
 db = connect(os.environ.get('DATABASE') or 'mysql://root:@127.0.0.1:3306/cfa')
 
@@ -66,14 +68,24 @@ class MySQLStorePipeline(object):
                 currency=item['currency'],
             )
         except IntegrityError:
-            print "Error in adding " + item['id']
+            print("Error in adding " + item['id'])
 
     def update_entry(self, item):
+        timestamp = datetime.now()
         project = App_Project.get(App_Project.id == item['id'])
-        print item['pledged']
-        project.pledged = item['pledged']
-        project.goal = item['goal']
-        project.date_modified = datetime.now()
+        end_date = re.split('-', project.end)
+        end = datetime(int(end_date[0]), int(end_date[1]), int(end_date[2]))
+
+        if int(item['pledged']) > 0:
+            project.pledged = item['pledged']
+        if item['goal'] is not "same":
+            project.goal = item['goal']
+        if project.pledged >= project.goal or end < timestamp:
+            project.active = 0
+            print(Fore.RED + "Funded or ended!" + Fore.WHITE )
+        else:
+            project.active = 1
+        project.date_modified = timestamp
         project.save()
 
     def update_entry_ig(self, item):
@@ -86,7 +98,7 @@ class MySQLStorePipeline(object):
     def process_item(self, item, spider):
         tip_pajka = spider.name[-4:]
 
-        if tip_pajka == "tter": #getting new projects
+        if tip_pajka == "tter":  # getting new projects
 
             if spider.name == 'indiegogo_getter':
                 try:
@@ -105,21 +117,20 @@ class MySQLStorePipeline(object):
                 self.new_entry(item)
                 self.st_vnosov += 1
 
-
             # statistics
-            print ":>:Duplicates: " + str(self.st_duplikatov)
-            print ":<:New projects: " + str(self.st_vnosov) + " \n"
-        elif tip_pajka == "ater": #updating projects
+            print(":>:Duplicates: " + str(self.st_duplikatov))
+            print(":<:New projects: " + str(self.st_vnosov) + " \n")
+        elif tip_pajka == "ater":  # updating projects
             try:
                 # TODO: Check date && compare pledged with goal -> active=0 or 1
                 if spider.name == "indiegogo_updater":
                     self.update_entry_ig(item)
-                    print "Project with title " + item['title'] + " updated."
+                    print(Fore.BLUE + "Project with title " + item['title'] + " updated." + Fore.WHITE)
                 else:
                     self.update_entry(item)
-                    print "Project with id " + str(item['id']) + " updated."
+                    print(Fore.BLUE + "Project with id " + str(item['id']) + " updated." + Fore.WHITE)
             except MySQLdb.Error, e:
-                print "Error %s: %s" % (e.args[0], e.args[1])
+                print ("Error %s: %s" % (e.args[0], e.args[1]))
 
         return item
 

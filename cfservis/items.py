@@ -165,6 +165,8 @@ def parse_rh_category(category):
 
 
 def parse_money_ks(value):
+    if value is '':
+        return "same"
     kes = value.decode('unicode-escape')
     value = ''.join(i for i in kes if i.isdigit())
     return value
