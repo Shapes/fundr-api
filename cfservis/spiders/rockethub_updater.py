@@ -36,12 +36,20 @@ class RockethubSpiderUpdater(scrapy.Spider):
     def parse(self, response):
         il = ItemLoader(item=RockethubUpItem())
 
-        goal = str(response.xpath('//*[@id="fund-project"]/ul/li[1]/div[2]/p[2]/text()').extract())
-        il.add_value('goal', goal)
+        goal_object = response.xpath('//*[@id="fund-project"]/ul/li[1]/div[2]/p[2]/text()').extract()
+        if len(goal_object) is 0:
+            il.add_value('goal', '')
+        else:
+            il.add_value('goal', str(goal_object))
 
         # TODO: nr. of backers
-        pledged = str(response.xpath('//*[@id="fund-project"]/ul/li[1]/div[2]/h3/text()').extract())
-        il.add_value('pledged', pledged)
+        pledged_object = response.xpath('//*[@id="fund-project"]/ul/li[1]/div[2]/h3/text()').extract()
+
+        if len(pledged_object) is 0:
+            pledged_object = response.xpath('//*[@id="fund-project"]/ul/li[1]/div/h3/text()').extract()
+
+        il.add_value('pledged', str(pledged_object))
+
 
         il.add_value('id', self.pid)
 

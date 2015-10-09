@@ -78,21 +78,16 @@ class MySQLStorePipeline(object):
 
         if int(item['pledged']) > 0:
             project.pledged = item['pledged']
-        if item['goal'] is not "same":
+        try:
             project.goal = item['goal']
+        except KeyError:
+            print(Fore.RED + "No goal defined!" + Fore.WHITE)
         if project.pledged >= project.goal or end < timestamp:
             project.active = 0
-            print(Fore.RED + "Funded or ended!" + Fore.WHITE )
+            print(Fore.RED + "Funded or ended!" + Fore.WHITE)
         else:
             project.active = 1
         project.date_modified = timestamp
-        project.save()
-
-    def update_entry_ig(self, item):
-        project = App_Project.get(App_Project.title == item['title'])
-        project.pledged = item['pledged']
-        project.goal = item['goal']
-        project.date_modified = datetime.now()
         project.save()
 
     def process_item(self, item, spider):
@@ -121,16 +116,8 @@ class MySQLStorePipeline(object):
             print(":>:Duplicates: " + str(self.st_duplikatov))
             print(":<:New projects: " + str(self.st_vnosov) + " \n")
         elif tip_pajka == "ater":  # updating projects
-            try:
-                # TODO: Check date && compare pledged with goal -> active=0 or 1
-                if spider.name == "indiegogo_updater":
-                    self.update_entry_ig(item)
-                    print(Fore.BLUE + "Project with title " + item['title'] + " updated." + Fore.WHITE)
-                else:
-                    self.update_entry(item)
-                    print(Fore.BLUE + "Project with id " + str(item['id']) + " updated." + Fore.WHITE)
-            except MySQLdb.Error, e:
-                print ("Error %s: %s" % (e.args[0], e.args[1]))
+            self.update_entry(item)
+            print(Fore.BLUE + "Project with id " + item['id'] + " updated." + Fore.WHITE)
 
         return item
 

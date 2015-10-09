@@ -166,7 +166,7 @@ def parse_rh_category(category):
 
 def parse_money_ks(value):
     if value is '':
-        return "same"
+        return value
     kes = value.decode('unicode-escape')
     value = ''.join(i for i in kes if i.isdigit())
     return value
@@ -369,7 +369,7 @@ class KickstarterUpItem(scrapy.Item):
 
 
 class IndiegogoUpItem(scrapy.Item):
-    title = scrapy.Field(
+    id = scrapy.Field(
         input_processor=MapCompose(),
         output_processor=TakeFirst()
     )

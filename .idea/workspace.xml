@@ -3,10 +3,61 @@
   <component name="ChangeListManager">
     <list id="dd6a76b0-a70a-4d64-9c2e-fc479fb462df" name="Default" comment="" />
     <list default="true" id="cc2dcac0-c809-4854-bec5-b5327296ee02" name="ORM integration(peewee), goodbye inline sql sentences ! (cherry picked from commit 33c28aa)" comment="ORM integration(peewee), goodbye inline sql sentences !&#10;(cherry picked from commit 33c28aa)">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_getter/a034be4c56f111e5ae397831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/9ff25c736c3511e5873c7831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/b1d3fc996c3511e5a8037831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/c3b503786c3511e5854f7831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/d5d1d9336c3511e5a8067831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/e7794c9c6c3511e5ae787831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/f959d9b86c3511e5ba5c7831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/0355b6ab6d0111e5ba507831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/094baf9c6d0111e5b21a7831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/0f415ba36d0111e5b95e7831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/f17409c76d0011e587c37831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/f76a150c6d0011e5af2f7831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/fd609e356d0011e597e27831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_getter/38e38c7056f211e590827831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_getter/3c4558a6521c11e5b8a57831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_getter/5a854442508011e590097831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_getter/9074fe30521a11e5b7ae7831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_getter/93a0138c507f11e581ae7831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/9ff3d5406c3511e5b9297831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/b1d546666c3511e5a7a27831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/c3b679426c3511e58f227831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/d5d2fde36c3511e598587831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/e77ac11c6c3511e5904c7831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/f95b3c216c3511e58c4f7831c1c9baf0.jl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_getter/a034be4c56f111e5ae397831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/9ff25c736c3511e5873c7831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/b1d3fc996c3511e5a8037831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/c3b503786c3511e5854f7831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/d5d1d9336c3511e5a8067831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/e7794c9c6c3511e5ae787831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/f959d9b86c3511e5ba5c7831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/0355b6ab6d0111e5ba507831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/094baf9c6d0111e5b21a7831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/0f415ba36d0111e5b95e7831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/f17409c76d0011e587c37831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/f76a150c6d0011e5af2f7831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/fd609e356d0011e597e27831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_getter/38e38c7056f211e590827831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_getter/3c4558a6521c11e5b8a57831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_getter/5a854442508011e590097831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_getter/6a027a3a521c11e59cf97831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_getter/9074fe30521a11e5b7ae7831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/9ff3d5406c3511e5b9297831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/b1d546666c3511e5a7a27831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/c3b679426c3511e58f227831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/d5d2fde36c3511e598587831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/e77ac11c6c3511e5904c7831c1c9baf0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/f95b3c216c3511e58c4f7831c1c9baf0.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbs/cfservis.db" afterPath="$PROJECT_DIR$/dbs/cfservis.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ghostdriver.log" afterPath="$PROJECT_DIR$/ghostdriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfservis/spiders/indiegogo_updater.py" afterPath="$PROJECT_DIR$/cfservis/spiders/indiegogo_updater.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfservis/items.py" afterPath="$PROJECT_DIR$/cfservis/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfservis/spiders/kickstarter_updater.py" afterPath="$PROJECT_DIR$/cfservis/spiders/kickstarter_updater.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfservis/pipelines.py" afterPath="$PROJECT_DIR$/cfservis/pipelines.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py" afterPath="$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cfservis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,16 +79,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="kickstarter_updater.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_updater.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="kickstarter_getter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_getter.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -60,14 +101,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kickstarter_updater.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_updater.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cfservis/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5667107">
-              <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
               <folding>
                 <element signature="e#194#231#0" expanded="true" />
+                <element signature="e#492#570#0" expanded="false" />
+                <element signature="e#608#1138#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rockethub_updater.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.663144">
+              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indiegogo_updater.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cfservis/spiders/indiegogo_updater.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,8 +148,8 @@
       <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cfservis/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="166" column="26" selection-start-line="166" selection-start-column="26" selection-end-line="166" selection-end-column="26" />
+            <state vertical-scroll-proportion="-9.037037">
+              <caret line="168" column="20" selection-start-line="168" selection-start-column="20" selection-end-line="168" selection-end-column="20" />
               <folding>
                 <element signature="e#152#165#0" expanded="true" />
               </folding>
@@ -96,11 +169,12 @@
         <option value="$PROJECT_DIR$/cfservis/settings.py" />
         <option value="$PROJECT_DIR$/cfservis/spiders/kickstarter_getter.py" />
         <option value="$PROJECT_DIR$/cfservis/spiders/rockethub_getter.py" />
-        <option value="$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py" />
         <option value="$PROJECT_DIR$/scrapy.cfg" />
         <option value="$PROJECT_DIR$/cfservis/spiders/kickstarter_updater.py" />
+        <option value="$PROJECT_DIR$/cfservis/spiders/indiegogo_updater.py" />
         <option value="$PROJECT_DIR$/cfservis/items.py" />
         <option value="$PROJECT_DIR$/cfservis/pipelines.py" />
+        <option value="$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py" />
       </list>
     </option>
   </component>
@@ -112,8 +186,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="36" />
-    <option name="y" value="23" />
+    <option name="x" value="37" />
+    <option name="y" value="47" />
     <option name="width" value="1404" />
     <option name="height" value="877" />
   </component>
@@ -140,8 +214,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -175,6 +247,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cfservis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rockethub_updater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfservis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfservis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfservis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfservis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfservis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfservis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="indiegogo_updater" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -212,6 +328,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -443,30 +561,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="23" width="1404" height="877" extended-state="6" />
+    <frame x="37" y="47" width="1404" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32966226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20044053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6089172" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32966226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2143906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6089172" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -490,6 +608,150 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_getter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/indiegogo_getter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding>
+            <element signature="e#46#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#492#570#0" expanded="false" />
+            <element signature="e#608#1138#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="166" column="26" selection-start-line="166" selection-start-column="26" selection-end-line="166" selection-end-column="26" />
+          <folding>
+            <element signature="e#152#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_getter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/indiegogo_getter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding>
+            <element signature="e#46#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+          <folding>
+            <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#492#570#0" expanded="false" />
+            <element signature="e#608#1138#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="166" column="26" selection-start-line="166" selection-start-column="26" selection-end-line="166" selection-end-column="26" />
+          <folding>
+            <element signature="e#152#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_getter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/indiegogo_getter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding>
+            <element signature="e#46#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#492#570#0" expanded="false" />
+            <element signature="e#608#1138#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="166" column="26" selection-start-line="166" selection-start-column="26" selection-end-line="166" selection-end-column="26" />
+          <folding>
+            <element signature="e#152#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_updater.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -522,6 +784,8 @@
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#492#570#0" expanded="false" />
+            <element signature="e#608#1138#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -550,6 +814,8 @@
           <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#492#570#0" expanded="false" />
+            <element signature="e#608#1138#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -584,6 +850,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#492#570#0" expanded="false" />
+            <element signature="e#608#1138#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -599,13 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfservis/spiders/indiegogo_updater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -627,13 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4266843">
           <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8916777">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -696,7 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5335968">
           <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,18 +971,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_updater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cfservis/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="166" column="26" selection-start-line="166" selection-start-column="26" selection-end-line="166" selection-end-column="26" />
+        <state vertical-scroll-proportion="-9.037037">
+          <caret line="168" column="20" selection-start-line="168" selection-start-column="20" selection-end-line="168" selection-end-column="20" />
           <folding>
             <element signature="e#152#165#0" expanded="true" />
           </folding>
@@ -738,11 +983,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cfservis/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5667107">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#492#570#0" expanded="false" />
+            <element signature="e#608#1138#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/indiegogo_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/kickstarter_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.663144">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

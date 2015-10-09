@@ -1,8 +1,0 @@
-2015-09-03 11:16:10 [scrapy] INFO: Scrapy 1.0.3 started (bot: cfservis)
-2015-09-03 11:16:10 [scrapy] INFO: Optional features available: ssl, http11
-2015-09-03 11:16:10 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'cfservis.spiders', 'SPIDER_MODULES': ['cfservis.spiders'], 'FEED_URI': 'file:///Users/marko/PythonProjects/cfaproject/cfservis/items/cfservis/rockethub_getter/6a027a3a521c11e59cf97831c1c9baf0.jl', 'LOG_FILE': 'logs/cfservis/rockethub_getter/6a027a3a521c11e59cf97831c1c9baf0.log', 'BOT_NAME': 'cfservis'}
-2015-09-03 11:16:10 [scrapy] INFO: Enabled extensions: CloseSpider, FeedExporter, TelnetConsole, LogStats, CoreStats, SpiderState
-2015-09-03 11:16:12 [selenium.webdriver.remote.remote_connection] INFO: Could not get IP address for host: localhost
-2015-09-03 11:16:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://localhost:64858/wd/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
-2015-09-03 11:16:12 [twisted] CRITICAL: Unhandled error in Deferred:
-2015-09-03 11:16:12 [twisted] CRITICAL: 

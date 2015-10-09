@@ -32,19 +32,23 @@ class IndiegogoSpiderUpdater(scrapy.Spider):
         else:
             print "\n Error_ig_updater: Project ID is not defined!"
 
-
     def parse(self, response):
-
         il = ItemLoader(item=IndiegogoUpItem())
+        il.add_value('id', self.pid)
 
-        goal = str(response.xpath('//*[@id="i-contrib-box-rework"]/div[2]/span[2]/span/span/text()').extract())
-        il.add_value('goal', goal)
+        goal_object = response.xpath('//*[@id="i-contrib-box-rework"]/div[2]/span[2]/span/span/text()').extract()
+        if len(goal_object) is not 0:
+            il.add_value('goal', str(goal_object))
+        else:
+            il.add_value('goal', '')
 
         # TODO: nr. of backers
-        pledged = str(response.xpath('//*[@id="i-contrib-box-rework"]/div[1]/div[1]/span/span/text()').extract())
-        il.add_value('pledged', pledged)
-
-        il.add_value('title', self.pid)
+        pledged_object = response.xpath('//*[@id="i-contrib-box-rework"]/div[1]/div[1]/span/span/text()').extract()
+        if len(pledged_object) is not 0:
+            il.add_value('pledged', str(pledged_object))
+        else:
+            pledged = str(response.xpath('/html/body/div[8]/div/div[2]/div[2]/div[1]/div[1]/div[2]/span/span').extract())
+            il.add_value('pledged', pledged)
 
         return il.load_item()
 
