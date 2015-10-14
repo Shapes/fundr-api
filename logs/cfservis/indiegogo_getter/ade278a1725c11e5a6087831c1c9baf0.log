@@ -1,0 +1,827 @@
+2015-10-14 12:17:08 [scrapy] INFO: Scrapy 1.0.3 started (bot: cfservis)
+2015-10-14 12:17:08 [scrapy] INFO: Optional features available: ssl, http11
+2015-10-14 12:17:08 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'cfservis.spiders', 'SPIDER_MODULES': ['cfservis.spiders'], 'FEED_URI': 'file:///Users/marko/PythonProjects/cfservis/items/cfservis/indiegogo_getter/ade278a1725c11e5a6087831c1c9baf0.jl', 'LOG_FILE': 'logs/cfservis/indiegogo_getter/ade278a1725c11e5a6087831c1c9baf0.log', 'BOT_NAME': 'cfservis'}
+2015-10-14 12:17:08 [scrapy] INFO: Enabled extensions: CloseSpider, FeedExporter, TelnetConsole, LogStats, CoreStats, SpiderState
+2015-10-14 12:17:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2015-10-14 12:17:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:09 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-10-14 12:17:09 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-10-14 12:17:09 [scrapy] INFO: Enabled item pipelines: MySQLStorePipeline
+2015-10-14 12:17:09 [scrapy] INFO: Spider opened
+2015-10-14 12:17:09 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-10-14 12:17:09 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6024
+2015-10-14 12:17:10 [scrapy] DEBUG: Crawled (404) <GET https://www.indiegogo.com/explore/comics#/browse/new> (referer: None)
+2015-10-14 12:17:10 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/animals#/browse/new> (referer: None)
+2015-10-14 12:17:10 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/design#/browse/new> (referer: None)
+2015-10-14 12:17:10 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/animals#/browse/new> (referer: None)
+2015-10-14 12:17:10 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/art#/browse/new> (referer: None)
+2015-10-14 12:17:10 [scrapy] DEBUG: Ignoring response <404 https://www.indiegogo.com/explore/comics>: HTTP status code is not handled or not allowed
+2015-10-14 12:17:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/url {"url": "https://www.indiegogo.com/explore/animals", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed"}
+2015-10-14 12:17:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:22 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element {"using": "xpath", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "value": "/html/body/div[6]/div[3]/div/div[2]/div[1]/div[2]/div/div[2]/a[4]/span"}
+2015-10-14 12:17:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:22 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842878/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842878"}
+2015-10-14 12:17:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:22 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842878/click {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842878"}
+2015-10-14 12:17:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/elements {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "value": "project-card-with-friend-list"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842879/elements {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842879", "value": "i-title"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842885/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842885"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842879/element {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842879", "value": "i-img"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842886/element {"using": "tag name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842886", "value": "img"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842887/attribute/src {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "name": "src", "id": ":wdc:1444817842887"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842879/elements {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842879", "value": "i-project"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842888/attribute/href {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "name": "href", "id": ":wdc:1444817842888"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842879/element {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842879", "value": "currency"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842889/elements {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842889", "value": "ng-binding"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842890/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842890"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842891/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842891"}
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817842888/click {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817842888"}
+2015-10-14 12:17:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "value": "i-time-left"}
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817855394/size {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817855394"}
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817855394/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817855394"}
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/elements {"using": "xpath", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[3]/div/div[4]/div[3]"}
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817855395/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817855395"}
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/elements {"using": "xpath", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[3]/div/div[4]/div[2]"}
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817855396/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817855396"}
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/elements {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "value": "i-detailsColumn-title"}
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817855397/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817855397"}
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/back {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`title` = %s) LIMIT 1', [u'Iqaluit Humane Society: Making Strides'])
+2015-10-14 12:17:38 [scrapy] DEBUG: Scraped from <200 https://www.indiegogo.com/explore/animals>
+{'author': u'Heather Crowley',
+ 'category_id': '15',
+ 'currency': u'CAD',
+ 'end': '2015-12-12',
+ 'id': 'use title',
+ 'img_url': u'https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_220,w_220/v1444665248/ioy9ziiddmdz2xmrh2oh.jpg',
+ 'location': u'Canada Iqaluit, Nunavut',
+ 'pledged': u'1494',
+ 'project_url': u'https://www.indiegogo.com/projects/iqaluit-humane-society-making-strides/pinw?sa=0&sp=0',
+ 'title': u'Iqaluit Humane Society: Making Strides',
+ 'type': 1,
+ 'website': 2}
+2015-10-14 12:17:38 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/dance#/browse/new> (referer: None)
+2015-10-14 12:17:38 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/gaming#/browse/new> (referer: None)
+2015-10-14 12:17:38 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/environment#/browse/new> (referer: None)
+2015-10-14 12:17:38 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/food#/browse/new> (referer: None)
+2015-10-14 12:17:38 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/fashion#/browse/new> (referer: None)
+2015-10-14 12:17:38 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/community#/browse/new> (referer: None)
+2015-10-14 12:17:38 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/film#/browse/new> (referer: None)
+2015-10-14 12:17:38 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/education#/browse/new> (referer: None)
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/elements {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "value": "project-card-with-friend-list"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858790/elements {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817858790", "value": "i-title"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858795/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817858795"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858790/element {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817858790", "value": "i-img"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858796/element {"using": "tag name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817858796", "value": "img"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858797/attribute/src {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "name": "src", "id": ":wdc:1444817858797"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858790/elements {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817858790", "value": "i-project"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858798/attribute/href {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "name": "href", "id": ":wdc:1444817858798"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858790/element {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817858790", "value": "currency"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858799/elements {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817858799", "value": "ng-binding"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858800/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817858800"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858801/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817858801"}
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817858798/click {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817858798"}
+2015-10-14 12:17:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "value": "i-time-left"}
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817865118/size {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817865118"}
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817865118/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817865118"}
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/elements {"using": "xpath", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[3]/div/div[4]/div[3]"}
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817865119/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817865119"}
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/elements {"using": "xpath", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "value": "/html/body/div[8]/div/div[2]/div[1]/div[2]/div[3]/div/div[4]/div[2]"}
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817865120/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817865120"}
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/elements {"using": "class name", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "value": "i-detailsColumn-title"}
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/element/:wdc:1444817865121/text {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "id": ":wdc:1444817865121"}
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-14 12:17:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/back {"sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed"}
+2015-10-14 12:17:47 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/animals#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 143, in parse
+    self.driver.back()
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 554, in back
+    self.execute(Command.GO_BACK)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1187, in do_open
+    r = h.getresponse(buffering=True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 1067, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 409, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 373, in _read_status
+    raise BadStatusLine(line)
+BadStatusLine: ''
+2015-10-14 12:17:47 [scrapy] INFO: Closing spider (shutdown)
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/design#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/animals#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/art#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/dance#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/gaming#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/environment#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/food#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/fashion#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/community#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/film#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/education#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/religion#/browse/new> (referer: None)
+2015-10-14 12:17:47 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/sports#/browse/new> (referer: None)
+2015-10-14 12:17:47 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/technology#/browse/new> (referer: None)
+2015-10-14 12:17:47 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/small_business#/browse/new> (referer: None)
+2015-10-14 12:17:47 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/health#/browse/new> (referer: None)
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/religion#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/sports#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/technology#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:47 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/music#/browse/new> (referer: None)
+2015-10-14 12:17:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:47 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/small_business#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:48 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/health#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:48 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/photography#/browse/new> (referer: None)
+2015-10-14 12:17:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:48 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/music#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:54569/wd/hub/session/ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "ba8b7ed0-725c-11e5-9b9c-3ff48c39f5ed", "height": 768}
+2015-10-14 12:17:48 [scrapy] ERROR: Spider error processing <GET https://www.indiegogo.com/explore/photography#/browse/new> (referer: None)
+Traceback (most recent call last):
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "cfservis/spiders/indiegogo_getter.py", line 70, in parse
+    self.driver.set_window_size(1024, 768)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 799, in set_window_size
+    'windowHandle': windowHandle})
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 194, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/marko/Envs/cfservis/lib/python2.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 404, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 422, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1214, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1184, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 61] Connection refused>
+2015-10-14 12:17:48 [scrapy] DEBUG: Crawled (404) <GET https://www.indiegogo.com/explore/publicist#/browse/new> (referer: None)
+2015-10-14 12:17:48 [scrapy] DEBUG: Ignoring response <404 https://www.indiegogo.com/explore/publicist>: HTTP status code is not handled or not allowed
+2015-10-14 12:17:48 [scrapy] INFO: Stored jsonlines feed (1 items) in: file:///Users/marko/PythonProjects/cfservis/items/cfservis/indiegogo_getter/ade278a1725c11e5a6087831c1c9baf0.jl
+2015-10-14 12:17:48 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 6586,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 365340,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 19,
+ 'downloader/response_status_count/404': 2,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2015, 10, 14, 10, 17, 48, 334870),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 147,
+ 'log_count/ERROR': 19,
+ 'log_count/INFO': 9,
+ 'response_received_count': 21,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 22,
+ 'scheduler/enqueued/memory': 22,
+ 'spider_exceptions/BadStatusLine': 1,
+ 'spider_exceptions/URLError': 18,
+ 'start_time': datetime.datetime(2015, 10, 14, 10, 17, 9, 805556)}
+2015-10-14 12:17:48 [scrapy] INFO: Spider closed (shutdown)
