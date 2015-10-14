@@ -19,8 +19,6 @@ class IndiegogoSpider(scrapy.Spider):
     categories = (
         'animals',
         'art',
-    )
-    """
         'comics',
         'community',
         'dance',
@@ -43,7 +41,7 @@ class IndiegogoSpider(scrapy.Spider):
         'video_web',
         'writing',
     )
-    """
+
     start_urls = [
         "https://www.indiegogo.com/explore/animals#/browse/new",
     ]

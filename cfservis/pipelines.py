@@ -9,13 +9,12 @@
 from __future__ import print_function
 import os
 import re
-import MySQLdb
 from peewee import *
 from playhouse.db_url import connect
 from datetime import datetime
 from colorama import Fore
 
-db = connect(os.environ.get('DATABASE') or 'mysql://root:@127.0.0.1:3306/cfa')
+db = connect(os.environ.get('DATABASE') or 'mysql://crawlers:@127.0.0.1:3306/cfa')
 
 
 class MySQLModel(Model):
@@ -36,7 +35,7 @@ class App_Project(MySQLModel):
     goal = IntegerField()
     currency = CharField(max_length=5)
     date_modified = DateTimeField()
-    active = IntegerField(default=0)
+    active = IntegerField(default=1)
     website = IntegerField()
     type = IntegerField()
     category_id = IntegerField()
@@ -48,6 +47,7 @@ class MySQLStorePipeline(object):
 
     def __init__(self):
         db.connect()
+        pass
 
     def new_entry(self, item):
         try:
@@ -67,6 +67,7 @@ class MySQLStorePipeline(object):
                 website=item['website'],
                 currency=item['currency'],
             )
+            db.close()
         except IntegrityError:
             print("Error in adding " + item['id'])
 
@@ -89,6 +90,7 @@ class MySQLStorePipeline(object):
             project.active = 1
         project.date_modified = timestamp
         project.save()
+        db.close()
 
     def process_item(self, item, spider):
         tip_pajka = spider.name[-4:]

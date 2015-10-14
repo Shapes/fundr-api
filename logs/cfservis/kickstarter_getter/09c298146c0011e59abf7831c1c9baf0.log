@@ -1,3 +1,0 @@
-2015-10-06 09:58:32 [scrapy] INFO: Scrapy 1.0.3 started (bot: cfservis)
-2015-10-06 09:58:32 [scrapy] INFO: Optional features available: ssl, http11
-2015-10-06 09:58:32 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'cfservis.spiders', 'SPIDER_MODULES': ['cfservis.spiders'], 'FEED_URI': 'file:///Users/marko/PythonProjects/cfservis/items/cfservis/kickstarter_getter/09c298146c0011e59abf7831c1c9baf0.jl', 'LOG_FILE': 'logs/cfservis/kickstarter_getter/09c298146c0011e59abf7831c1c9baf0.log', 'BOT_NAME': 'cfservis'}

@@ -21,8 +21,6 @@ class KickstarterSpider(scrapy.Spider):
     categories = (
         'art',
         'comics',
-    )
-    """
         'crafts',
         'dance',
         'design',
@@ -37,7 +35,7 @@ class KickstarterSpider(scrapy.Spider):
         'technology',
         'theater',
     )
-    """
+
 
     def __init__(self, category=None, type=None, *args, **kwargs):
         super(KickstarterSpider, self).__init__(*args, **kwargs)

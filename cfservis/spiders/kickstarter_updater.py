@@ -22,7 +22,7 @@ class KickstarterSpiderUpdater(scrapy.Spider):
         if pro is not None:
             self.project = pro
             self.start_urls = [
-                "https://www.kickstarter.com" + pro,
+                pro,
             ]
         else:
             print "\n Warning: Project URL is not defined!"

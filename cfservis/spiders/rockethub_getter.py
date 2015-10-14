@@ -22,9 +22,7 @@ class RockethubSpider(scrapy.Spider):
     categories = (
         '1',
         '2',
-        '3', '4', '5', '6'
-    )
-    """
+        '3', '4', '5', '6',
         '7', '8', '9', '10',
         '11', '12', '13', '14',
         '15', '17', '18',
@@ -34,7 +32,6 @@ class RockethubSpider(scrapy.Spider):
         '35', '36', '37', '38',
         '41'
     )
-    """
 
     def __init__(self, category=None, type=None, *args, **kwargs):
         #self.driver = webdriver.Firefox()

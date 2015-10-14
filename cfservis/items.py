@@ -141,6 +141,7 @@ def parse_author(value):
 
 def parse_url_k(value):
     value = value.decode('utf-8')
+    value = "https://www.kickstarter.com" + value
     return value[:-20]
 
 
