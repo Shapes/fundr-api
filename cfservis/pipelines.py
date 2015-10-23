@@ -41,6 +41,11 @@ class App_Project(MySQLModel):
     category_id = IntegerField()
 
 
+class App_Erorrs(MySQLModel):
+    message = CharField(max_length=400)
+    date_modified = DateTimeField()
+
+
 class MySQLStorePipeline(object):
     st_duplikatov = 0
     st_vnosov = 0
@@ -67,9 +72,13 @@ class MySQLStorePipeline(object):
                 website=item['website'],
                 currency=item['currency'],
             )
-            db.close()
         except IntegrityError:
             print("Error in adding " + item['id'])
+            try:
+                err = App_Erorrs.create(message="Error in adding " + item['id'], date_modified=datetime.now())
+            except Exception as e:
+                print("Error adding an error !" + e.message)
+        db.close()
 
     def update_entry(self, item):
         timestamp = datetime.now()
@@ -77,19 +86,37 @@ class MySQLStorePipeline(object):
         end_date = re.split('-', project.end)
         end = datetime(int(end_date[0]), int(end_date[1]), int(end_date[2]))
 
-        if int(item['pledged']) > 0:
-            project.pledged = item['pledged']
+        # set pledged
+        try:
+            pledged = item['pledged']
+            if int(pledged) > 0:
+                project.pledged = int(pledged)
+        except Exception as e:
+            print(Fore.RED + "Can't retrieve pledged!" + " Because: " + e.message + Fore.WHITE)
+
+        # set goal
         try:
             project.goal = item['goal']
         except KeyError:
-            print(Fore.RED + "No goal defined!" + Fore.WHITE)
+            print(Fore.RED + "Can't retrieve goal!" + Fore.WHITE)
+
+        # check if project ended or is funded = LIFECycle
         if project.pledged >= project.goal or end < timestamp:
             project.active = 0
             print(Fore.RED + "Funded or ended!" + Fore.WHITE)
         else:
             project.active = 1
-        project.date_modified = timestamp
-        project.save()
+
+        # save update
+        try:
+            project.date_modified = timestamp
+            project.save()
+        except Exception as e:
+            print(Fore.RED + "Error saving project with id " + str(item['id']) + ". Because: " + e.message + Fore.WHITE)
+            try:
+                err = App_Erorrs.create(message="Error saving project with id " + str(item['id']), date_modified=timestamp)
+            except Exception as e:
+                print("Error adding an error !" + e.message)
         db.close()
 
     def process_item(self, item, spider):

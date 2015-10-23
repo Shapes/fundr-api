@@ -74,11 +74,11 @@ class IndiegogoSpider(scrapy.Spider):
 
 
         # bugfix
-        first_option = self.driver.find_element_by_xpath('/html/body/div[6]/div[3]/div/div[2]/div[1]/div[2]/div/div[2]/a[4]/span')
+        first_option = self.driver.find_element_by_xpath('//div[2]/div/div[2]/a[4]/span')
         if first_option.text == "NEW THIS WEEK":
             first_option.click()
         else:
-            self.driver.find_element_by_xpath('/html/body/div[6]/div[3]/div/div[2]/div[1]/div[2]/div/div[2]/a[3]/span').click()
+            self.driver.find_element_by_xpath('//div[2]/div/div[2]/a[3]/span').click()
         time.sleep(4)
 
         if self.type == "all":
@@ -90,7 +90,7 @@ class IndiegogoSpider(scrapy.Spider):
         current_category = self.category
 
         idx = 0
-        while idx < 6:  # TODO: mozno da jih je manj, za doloceno kategorijo
+        while idx < 6:  # TODO: mozno da jih je manj, za doloceno kategorijo?
             indie_projects = self.driver.find_elements_by_class_name("project-card-with-friend-list")
             project = indie_projects[idx]
 
@@ -131,8 +131,8 @@ class IndiegogoSpider(scrapy.Spider):
                 il.add_value('end', 'endet')
 
             # TODO: fiksni xpath se spreminja!
-            location_city_state = (self.driver.find_elements_by_xpath('/html/body/div[8]/div/div[2]/div[1]/div[2]/div[3]/div/div[4]/div[3]'))[0].text
-            location_country = (self.driver.find_elements_by_xpath('/html/body/div[8]/div/div[2]/div[1]/div[2]/div[3]/div/div[4]/div[2]'))[0].text
+            location_city_state = (self.driver.find_elements_by_xpath('//div[3]/div/div[4]/div[2]'))[0].text
+            location_country = (self.driver.find_elements_by_xpath('//div[3]/div/div[4]/div[3]'))[0].text
 
             il.add_value('location', location_city_state)
             il.add_value('location', location_country)

@@ -35,6 +35,7 @@ class RockethubSpiderUpdater(scrapy.Spider):
 
     def parse(self, response):
         il = ItemLoader(item=RockethubUpItem())
+        il.add_value('id', self.pid)
 
         goal_object = response.xpath('//*[@id="fund-project"]/ul/li[1]/div[2]/p[2]/text()').extract()
         if len(goal_object) is 0:
@@ -47,11 +48,10 @@ class RockethubSpiderUpdater(scrapy.Spider):
 
         if len(pledged_object) is 0:
             pledged_object = response.xpath('//*[@id="fund-project"]/ul/li[1]/div/h3/text()').extract()
+        else:
+            pledged_object = 0
 
         il.add_value('pledged', str(pledged_object))
-
-
-        il.add_value('id', self.pid)
 
         return il.load_item()
 
