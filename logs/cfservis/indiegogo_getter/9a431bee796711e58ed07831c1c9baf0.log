@@ -1,0 +1,407 @@
+2015-10-23 11:22:48 [scrapy] INFO: Scrapy 1.0.3 started (bot: cfservis)
+2015-10-23 11:22:48 [scrapy] INFO: Optional features available: ssl, http11
+2015-10-23 11:22:48 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'cfservis.spiders', 'SPIDER_MODULES': ['cfservis.spiders'], 'FEED_URI': 'file:///Users/marko/PythonProjects/cfservis/items/cfservis/indiegogo_getter/9a431bee796711e58ed07831c1c9baf0.jl', 'LOG_FILE': 'logs/cfservis/indiegogo_getter/9a431bee796711e58ed07831c1c9baf0.log', 'BOT_NAME': 'cfservis'}
+2015-10-23 11:22:48 [scrapy] INFO: Enabled extensions: CloseSpider, FeedExporter, TelnetConsole, LogStats, CoreStats, SpiderState
+2015-10-23 11:22:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2015-10-23 11:22:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:22:49 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-10-23 11:22:49 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-10-23 11:22:49 [scrapy] INFO: Enabled item pipelines: MySQLStorePipeline
+2015-10-23 11:22:49 [scrapy] INFO: Spider opened
+2015-10-23 11:22:49 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-10-23 11:22:49 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-10-23 11:22:50 [scrapy] DEBUG: Crawled (200) <GET https://www.indiegogo.com/explore/community#/browse/new> (referer: None)
+2015-10-23 11:22:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/window/current/size {"width": 1024, "windowHandle": "current", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "height": 768}
+2015-10-23 11:22:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:22:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/url {"url": "https://www.indiegogo.com/explore/community", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a"}
+2015-10-23 11:22:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:01 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[2]/div/div[2]/a[4]/span"}
+2015-10-23 11:23:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:01 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181845/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181845"}
+2015-10-23 11:23:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:01 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181845/click {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181845"}
+2015-10-23 11:23:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "project-card-with-friend-list"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181846/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181846", "value": "i-title"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181852/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181852"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181846/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181846", "value": "i-img"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181853/element {"using": "tag name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181853", "value": "img"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181854/attribute/src {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "src", "id": ":wdc:1445592181854"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181846/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181846", "value": "i-project"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181855/attribute/href {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "href", "id": ":wdc:1445592181855"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181846/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181846", "value": "currency"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181856/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181856", "value": "ng-binding"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181857/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181857"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181858/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181858"}
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592181855/click {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592181855"}
+2015-10-23 11:23:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-time-left"}
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592196598/size {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592196598"}
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592196598/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592196598"}
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[2]"}
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592196599/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592196599"}
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[3]"}
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592196600/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592196600"}
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-detailsColumn-title"}
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592196601/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592196601"}
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/back {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`title` = %s) LIMIT 1', [u'When The People Lead'])
+2015-10-23 11:23:18 [scrapy] DEBUG: Scraped from <200 https://www.indiegogo.com/explore/community>
+{'author': u'J Brave Luminous',
+ 'category_id': '14',
+ 'currency': u'USD',
+ 'end': '2015-12-06',
+ 'id': 'use title',
+ 'img_url': u'https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_220,w_220/v1443642457/om0orqpexzj4yatkucq6.jpg',
+ 'location': u'Los Angeles, California United States',
+ 'pledged': u'4425',
+ 'project_url': u'https://www.indiegogo.com/projects/when-the-people-lead/pinw?sa=0&sp=0',
+ 'title': u'When The People Lead',
+ 'type': 1,
+ 'website': 2}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "project-card-with-friend-list"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198903/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592198903", "value": "i-title"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198908/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592198908"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198903/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592198903", "value": "i-img"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198909/element {"using": "tag name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592198909", "value": "img"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198910/attribute/src {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "src", "id": ":wdc:1445592198910"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198903/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592198903", "value": "i-project"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198911/attribute/href {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "href", "id": ":wdc:1445592198911"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198903/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592198903", "value": "currency"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198912/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592198912", "value": "ng-binding"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198913/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592198913"}
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:18 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198914/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592198914"}
+2015-10-23 11:23:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:19 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592198911/click {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592198911"}
+2015-10-23 11:23:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-time-left"}
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592207816/size {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592207816"}
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592207816/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592207816"}
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[2]"}
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592207817/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592207817"}
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[3]"}
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592207818/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592207818"}
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-detailsColumn-title"}
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592207819/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592207819"}
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/back {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a"}
+2015-10-23 11:23:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:29 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`title` = %s) LIMIT 1', [u'Support for St. Louis Churches'])
+2015-10-23 11:23:29 [scrapy] DEBUG: Scraped from <200 https://www.indiegogo.com/explore/community>
+{'author': u'Michelle Higgins',
+ 'category_id': '14',
+ 'currency': u'USD',
+ 'end': '2015-11-30',
+ 'id': 'use title',
+ 'img_url': u'https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_220,w_220/v1445351996/uksa3r00xctzjcbiayya.jpg',
+ 'location': u'Saint Louis, Missouri United States',
+ 'pledged': u'7445',
+ 'project_url': u'https://www.indiegogo.com/projects/support-for-st-louis-churches/pipp?sa=0&sp=0',
+ 'title': u'Support for St. Louis Churches',
+ 'type': 1,
+ 'website': 2}
+2015-10-23 11:23:29 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "project-card-with-friend-list"}
+2015-10-23 11:23:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:29 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209972/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592209972", "value": "i-title"}
+2015-10-23 11:23:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:29 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209976/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592209976"}
+2015-10-23 11:23:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:29 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209972/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592209972", "value": "i-img"}
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209977/element {"using": "tag name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592209977", "value": "img"}
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209978/attribute/src {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "src", "id": ":wdc:1445592209978"}
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209972/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592209972", "value": "i-project"}
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209979/attribute/href {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "href", "id": ":wdc:1445592209979"}
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209972/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592209972", "value": "currency"}
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209980/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592209980", "value": "ng-binding"}
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209981/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592209981"}
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209982/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592209982"}
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592209979/click {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592209979"}
+2015-10-23 11:23:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-time-left"}
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592218869/size {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592218869"}
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592218869/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592218869"}
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[2]"}
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592218870/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592218870"}
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[3]"}
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592218871/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592218871"}
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-detailsColumn-title"}
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592218872/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592218872"}
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/back {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`title` = %s) LIMIT 1', [u'The 2015 Liberia Marathon - A New Beginning'])
+2015-10-23 11:23:42 [scrapy] DEBUG: Scraped from <200 https://www.indiegogo.com/explore/community>
+{'author': u'Liberia Marathon',
+ 'category_id': '14',
+ 'currency': u'USD',
+ 'end': '2015-11-08',
+ 'id': 'use title',
+ 'img_url': u'https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_220,w_220/v1445244069/gpfjmmpcvjpovs0iukt3.png',
+ 'location': u'Monrovia Liberia',
+ 'pledged': u'9320',
+ 'project_url': u'https://www.indiegogo.com/projects/the-2015-liberia-marathon-a-new-beginning/pipp?sa=0&sp=0',
+ 'title': u'The 2015 Liberia Marathon - A New Beginning',
+ 'type': 1,
+ 'website': 2}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "project-card-with-friend-list"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222021/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592222021", "value": "i-title"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222024/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592222024"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222021/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592222021", "value": "i-img"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222025/element {"using": "tag name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592222025", "value": "img"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222026/attribute/src {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "src", "id": ":wdc:1445592222026"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222021/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592222021", "value": "i-project"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222027/attribute/href {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "href", "id": ":wdc:1445592222027"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222021/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592222021", "value": "currency"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222028/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592222028", "value": "ng-binding"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222029/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592222029"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222030/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592222030"}
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592222027/click {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592222027"}
+2015-10-23 11:23:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-time-left"}
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592232764/size {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592232764"}
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592232764/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592232764"}
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[2]"}
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592232765/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592232765"}
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[3]"}
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592232766/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592232766"}
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-detailsColumn-title"}
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592232767/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592232767"}
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/back {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a"}
+2015-10-23 11:23:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:54 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`title` = %s) LIMIT 1', [u'#RiseUpOctober - STOP Police Terror'])
+2015-10-23 11:23:54 [scrapy] DEBUG: Scraped from <200 https://www.indiegogo.com/explore/community>
+{'author': u'Debra Sweet',
+ 'category_id': '14',
+ 'currency': u'USD',
+ 'end': '2015-10-27',
+ 'id': 'use title',
+ 'img_url': u'https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_220,w_220/v1443195556/t2xperprnr4snu5ak0jk.png',
+ 'location': u'New York, New York United States',
+ 'pledged': u'85198',
+ 'project_url': u'https://www.indiegogo.com/projects/riseupoctober-stop-police-terror/pipp?sa=0&sp=0',
+ 'title': u'#RiseUpOctober - STOP Police Terror',
+ 'type': 1,
+ 'website': 2}
+2015-10-23 11:23:54 [scrapy] INFO: Crawled 1 pages (at 1 pages/min), scraped 4 items (at 4 items/min)
+2015-10-23 11:23:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "project-card-with-friend-list"}
+2015-10-23 11:23:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234991/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592234991", "value": "i-title"}
+2015-10-23 11:23:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234993/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592234993"}
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234991/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592234991", "value": "i-img"}
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234994/element {"using": "tag name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592234994", "value": "img"}
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234995/attribute/src {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "src", "id": ":wdc:1445592234995"}
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234991/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592234991", "value": "i-project"}
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234996/attribute/href {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "href", "id": ":wdc:1445592234996"}
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234991/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592234991", "value": "currency"}
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234997/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592234997", "value": "ng-binding"}
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234998/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592234998"}
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234999/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592234999"}
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:23:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592234996/click {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592234996"}
+2015-10-23 11:23:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-time-left"}
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592243854/size {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592243854"}
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592243854/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592243854"}
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[2]"}
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592243855/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592243855"}
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[3]"}
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592243856/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592243856"}
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-detailsColumn-title"}
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592243857/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592243857"}
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/back {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`title` = %s) LIMIT 1', [u'SETX Progressive Radio - Put KUUV-LP On Air!'])
+2015-10-23 11:24:06 [scrapy] DEBUG: Scraped from <200 https://www.indiegogo.com/explore/community>
+{'author': u'Karen Corwin',
+ 'category_id': '14',
+ 'currency': u'USD',
+ 'end': '2015-12-21',
+ 'id': 'use title',
+ 'img_url': u'https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_220,w_220/v1445477769/opo6cw2ntip3v61uaum4.jpg',
+ 'location': u'Beaumont, Texas United States',
+ 'pledged': u'1090',
+ 'project_url': u'https://www.indiegogo.com/projects/setx-progressive-radio-put-kuuv-lp-on-air/pipp?sa=0&sp=0',
+ 'title': u'SETX Progressive Radio - Put KUUV-LP On Air!',
+ 'type': 1,
+ 'website': 2}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "project-card-with-friend-list"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246373/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592246373", "value": "i-title"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246374/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592246374"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246373/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592246373", "value": "i-img"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246375/element {"using": "tag name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592246375", "value": "img"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246376/attribute/src {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "src", "id": ":wdc:1445592246376"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246373/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592246373", "value": "i-project"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246377/attribute/href {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "name": "href", "id": ":wdc:1445592246377"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246373/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592246373", "value": "currency"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246378/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592246378", "value": "ng-binding"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246379/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592246379"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246380/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592246380"}
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592246377/click {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592246377"}
+2015-10-23 11:24:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-time-left"}
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592255267/size {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592255267"}
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592255267/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592255267"}
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[2]"}
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592255268/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592255268"}
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "xpath", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "//div[3]/div/div[4]/div[3]"}
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592255269/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592255269"}
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/elements {"using": "class name", "sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "value": "i-detailsColumn-title"}
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/element/:wdc:1445592255270/text {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a", "id": ":wdc:1445592255270"}
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/back {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a"}
+2015-10-23 11:24:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:17 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`title` = %s) LIMIT 1', [u'IMAGINE THIS!'])
+2015-10-23 11:24:17 [scrapy] DEBUG: Scraped from <200 https://www.indiegogo.com/explore/community>
+{'author': u'nataliarc4',
+ 'category_id': '14',
+ 'currency': u'USD',
+ 'end': '2015-11-02',
+ 'id': 'use title',
+ 'img_url': u'https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_220,w_220/v1441937597/vhqcqyi9yhg20mm04k8i.jpg',
+ 'location': u'Phoenix, Arizona United States',
+ 'pledged': u'1375',
+ 'project_url': u'https://www.indiegogo.com/projects/imagine-this--2/pipp?sa=0&sp=0',
+ 'title': u'IMAGINE THIS!',
+ 'type': 1,
+ 'website': 2}
+2015-10-23 11:24:17 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:60848/wd/hub/session/a0eeb8e0-7967-11e5-9dc9-a146ed13866a/window {"sessionId": "a0eeb8e0-7967-11e5-9dc9-a146ed13866a"}
+2015-10-23 11:24:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2015-10-23 11:24:17 [scrapy] INFO: Closing spider (finished)
+2015-10-23 11:24:17 [scrapy] INFO: Stored jsonlines feed (6 items) in: file:///Users/marko/PythonProjects/cfservis/items/cfservis/indiegogo_getter/9a431bee796711e58ed07831c1c9baf0.jl
+2015-10-23 11:24:17 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 232,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 17958,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2015, 10, 23, 9, 24, 17, 339184),
+ 'item_scraped_count': 6,
+ 'log_count/DEBUG': 304,
+ 'log_count/INFO': 9,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2015, 10, 23, 9, 22, 49, 434746)}
+2015-10-23 11:24:17 [scrapy] INFO: Spider closed (finished)
