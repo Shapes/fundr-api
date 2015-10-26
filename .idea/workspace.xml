@@ -3,80 +3,6 @@
   <component name="ChangeListManager">
     <list id="dd6a76b0-a70a-4d64-9c2e-fc479fb462df" name="Default" comment="" />
     <list default="true" id="cc2dcac0-c809-4854-bec5-b5327296ee02" name="ORM integration(peewee), goodbye inline sql sentences ! (cherry picked from commit 33c28aa)" comment="ORM integration(peewee), goodbye inline sql sentences !&#10;(cherry picked from commit 33c28aa)">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_getter/1ed5af0f725c11e5aa357831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_getter/38b992d1725911e582ec7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_getter/8b90e214725711e59ab17831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_getter/9bd9221e727111e5b4e17831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_getter/aa0fbc28725d11e5b7ee7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_getter/ade278a1725c11e5a6087831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/a4f689e8728211e585347831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/b6d8bdcc728211e5a60f7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/c8ba4fd7728211e5ba907831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/da9bbe9e728211e584547831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/ec7d68cc728211e5a7077831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/indiegogo_updater/fe5f08e8728211e5bd6c7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_getter/1a9e6fa8725811e582957831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_getter/440a9070725711e582317831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_getter/665b85b3725c11e5863a7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_getter/9bd89fb0727111e59eb27831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_getter/f131a9de725811e5b9827831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_getter/f19539e1725d11e580447831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/a4f4f0ee728211e5bdae7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/b6d72911728211e584ba7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/c8b8d16b728211e58b2b7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/da9a302e728211e5ae7e7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/ec7bc245728211e5b89a7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/kickstarter_updater/fe5d8114728211e591157831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_getter/38b94b19725911e5bc267831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_getter/4298811e725c11e580d87831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_getter/85e7ddcf725811e599537831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_getter/d3183587725711e5bbe57831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/a4f7cddc728211e59e9d7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/b6da0c2b728211e59a0d7831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/c8bbbfb0728211e5b9877831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/da9d1242728211e5b4167831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/ec7ea2fa728211e58f067831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/items/cfservis/rockethub_updater/fe604668728211e587297831c1c9baf0.jl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_getter/1ed5af0f725c11e5aa357831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_getter/38b992d1725911e582ec7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_getter/8b90e214725711e59ab17831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_getter/9bd9221e727111e5b4e17831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_getter/aa0fbc28725d11e5b7ee7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_getter/ade278a1725c11e5a6087831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/a4f689e8728211e585347831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/b6d8bdcc728211e5a60f7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/c8ba4fd7728211e5ba907831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/da9bbe9e728211e584547831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/ec7d68cc728211e5a7077831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/indiegogo_updater/fe5f08e8728211e5bd6c7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_getter/1a9e6fa8725811e582957831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_getter/440a9070725711e582317831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_getter/665b85b3725c11e5863a7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_getter/9bd89fb0727111e59eb27831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_getter/f131a9de725811e5b9827831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_getter/f19539e1725d11e580447831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/a4f4f0ee728211e5bdae7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/b6d72911728211e584ba7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/c8b8d16b728211e58b2b7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/da9a302e728211e5ae7e7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/ec7bc245728211e5b89a7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/kickstarter_updater/fe5d8114728211e591157831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_getter/38b94b19725911e5bc267831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_getter/4298811e725c11e580d87831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_getter/85e7ddcf725811e599537831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_getter/d3183587725711e5bbe57831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/a4f7cddc728211e59e9d7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/b6da0c2b728211e59a0d7831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/c8bbbfb0728211e5b9877831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/da9d1242728211e5b4167831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/ec7ea2fa728211e58f067831c1c9baf0.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/cfservis/rockethub_updater/fe604668728211e587297831c1c9baf0.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbs/cfservis.db" afterPath="$PROJECT_DIR$/dbs/cfservis.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ghostdriver.log" afterPath="$PROJECT_DIR$/ghostdriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfservis/spiders/indiegogo_getter.py" afterPath="$PROJECT_DIR$/cfservis/spiders/indiegogo_getter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfservis/pipelines.py" afterPath="$PROJECT_DIR$/cfservis/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py" afterPath="$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfservis/settings.py" afterPath="$PROJECT_DIR$/cfservis/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cfservis.iws" />
@@ -99,58 +25,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cfservis/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32806325">
-              <caret line="124" column="55" selection-start-line="124" selection-start-column="55" selection-end-line="124" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
               <folding>
                 <element signature="e#194#231#0" expanded="true" />
+                <element signature="e#761#1291#0" expanded="false" />
+                <element signature="e#1575#2646#0" expanded="false" />
+                <element signature="e#2690#4125#0" expanded="false" />
+                <element signature="e#4177#5229#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfservis/items.py">
+      <file leaf-file-name="scrapy.cfg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrapy.cfg">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="238" column="36" selection-start-line="238" selection-start-column="36" selection-end-line="238" selection-end-column="36" />
-              <folding>
-                <element signature="e#5581#7018#0" expanded="false" />
-                <element signature="e#7059#8508#0" expanded="false" />
-                <element signature="e#8938#9280#0" expanded="false" />
-                <element signature="e#9322#9664#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indiegogo_getter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfservis/spiders/indiegogo_getter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="59" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfservis/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rockethub_updater.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.07905138">
+              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -164,8 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/scrapy.cfg" />
         <option value="$PROJECT_DIR$/cfservis/spiders/indiegogo_updater.py" />
         <option value="$PROJECT_DIR$/cfservis/spiders/kickstarter_getter.py" />
         <option value="$PROJECT_DIR$/cfservis/spiders/rockethub_getter.py" />
@@ -176,6 +69,8 @@
         <option value="$PROJECT_DIR$/cfservis/settings.py" />
         <option value="$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py" />
         <option value="$PROJECT_DIR$/cfservis/spiders/indiegogo_getter.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/scrapy.cfg" />
         <option value="$PROJECT_DIR$/cfservis/pipelines.py" />
       </list>
     </option>
@@ -216,6 +111,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,49 +140,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="logs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="cfservis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfservis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfservis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfservis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfservis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfservis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfservis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spiders" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -520,7 +379,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444834282625</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ORM integration(peewee), goodbye inline sql sentences !&#10;(cherry picked from commit 33c28aa)">
+      <created>1445614315693</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1445614315693</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -533,7 +398,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32966226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18955651" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19170243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -580,12 +445,40 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/indiegogo_getter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="59" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/rockethub_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cfservis/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#761#1291#0" expanded="false" />
+            <element signature="e#1575#2646#0" expanded="false" />
+            <element signature="e#2690#4125#0" expanded="false" />
+            <element signature="e#4177#5229#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -674,6 +567,10 @@
           <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#761#1291#0" expanded="false" />
+            <element signature="e#1575#2646#0" expanded="false" />
+            <element signature="e#2690#4125#0" expanded="false" />
+            <element signature="e#4177#5229#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -712,6 +609,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#761#1291#0" expanded="false" />
+            <element signature="e#1575#2646#0" expanded="false" />
+            <element signature="e#2690#4125#0" expanded="false" />
+            <element signature="e#4177#5229#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -750,6 +651,10 @@
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#761#1291#0" expanded="false" />
+            <element signature="e#1575#2646#0" expanded="false" />
+            <element signature="e#2690#4125#0" expanded="false" />
+            <element signature="e#4177#5229#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -774,6 +679,10 @@
           <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#761#1291#0" expanded="false" />
+            <element signature="e#1575#2646#0" expanded="false" />
+            <element signature="e#2690#4125#0" expanded="false" />
+            <element signature="e#4177#5229#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -805,14 +714,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#761#1291#0" expanded="false" />
+            <element signature="e#1575#2646#0" expanded="false" />
+            <element signature="e#2690#4125#0" expanded="false" />
+            <element signature="e#4177#5229#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -901,14 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cfservis/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -916,25 +814,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15852048">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfservis/spiders/indiegogo_getter.py">
+    <entry file="file://$PROJECT_DIR$/logs/cfservis/indiegogo_getter/9a431bee796711e58ed07831c1c9baf0.log">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="59" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/cfservis/indiegogo_getter/9a431bee796711e58ed07831c1c9baf0.log">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/ghostdriver.log">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -944,11 +842,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cfservis/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32806325">
-          <caret line="124" column="55" selection-start-line="124" selection-start-column="55" selection-end-line="124" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
           <folding>
             <element signature="e#194#231#0" expanded="true" />
+            <element signature="e#761#1291#0" expanded="false" />
+            <element signature="e#1575#2646#0" expanded="false" />
+            <element signature="e#2690#4125#0" expanded="false" />
+            <element signature="e#4177#5229#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52868855">
+          <caret line="73" column="18" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfservis/spiders/indiegogo_getter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19762845">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07905138">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
