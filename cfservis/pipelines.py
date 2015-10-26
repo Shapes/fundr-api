@@ -15,11 +15,10 @@ from datetime import datetime
 from colorama import Fore
 
 # db = connect(os.environ.get('DATABASE') or 'mysql://crawlers:@127.0.0.1:3306/cfa')
-db = connect(os.environ.get('DATABASE') or 'postgres://cwbgprmyqmdquj:a8bxzQVPkh51SUnKIILPn-kn1H@ec2-54-197-241-24.compute-1.amazonaws.com:5432/d5rusc757iti8l')
+db = connect('postgres://cwbgprmyqmdquj:a8bxzQVPkh51SUnKIILPn-kn1H@ec2-54-197-241-24.compute-1.amazonaws.com:5432/d5rusc757iti8l')
 
 
 class MySQLModel(Model):
-    """A base model for my MySQL database"""
     class Meta:
         database = db
 
