@@ -50,9 +50,7 @@ class MySQLStorePipeline(object):
     st_duplikatov = 0
     st_vnosov = 0
 
-    def __init__(self):
-        db.connect()
-        pass
+    #def __init__(self):
 
     def new_entry(self, item):
         try:
@@ -117,8 +115,8 @@ class MySQLStorePipeline(object):
             except Exception as e:
                 print("Error adding an error !" + e.message)
 
-
     def process_item(self, item, spider):
+        db.connect()
         tip_pajka = spider.name[-4:]
 
         if tip_pajka == "tter":  # getting new projects
