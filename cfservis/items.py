@@ -169,6 +169,7 @@ def parse_money_ks(value):
     if value is '':
         return value
     kes = value.decode('unicode-escape')
+    kes = kes.split('.')[0]
     value = ''.join(i for i in kes if i.isdigit())
     return value
 
