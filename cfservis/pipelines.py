@@ -117,7 +117,7 @@ class MySQLStorePipeline(object):
                 err = App_Erorrs.create(message="Error saving project with id " + str(item['id']), date_modified=timestamp)
             except Exception as e:
                 print("Error adding an error !" + e.message)
-        db.close()
+        #db.close()
 
     def process_item(self, item, spider):
         tip_pajka = spider.name[-4:]
