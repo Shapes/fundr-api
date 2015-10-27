@@ -35,7 +35,7 @@ class RockethubSpider(scrapy.Spider):
 
     def __init__(self, category=None, type=None, *args, **kwargs):
         #self.driver = webdriver.Firefox()
-        self.driver = webdriver.PhantomJS() 
+        self.driver = webdriver.PhantomJS()
         self.category = category
         self.type = type
         super(RockethubSpider, self).__init__(*args, **kwargs)
