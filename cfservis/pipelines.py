@@ -79,7 +79,7 @@ class MySQLStorePipeline(object):
                 err = App_Erorrs.create(message="Error in adding " + item['id'], date_modified=datetime.now())
             except Exception as e:
                 print("Error adding an error !" + e.message)
-        db.close()
+        #db.close()
 
     def update_entry(self, item):
         timestamp = datetime.now()
