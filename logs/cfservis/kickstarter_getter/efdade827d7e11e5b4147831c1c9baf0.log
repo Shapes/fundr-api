@@ -1,0 +1,332 @@
+2015-10-28 15:19:49 [scrapy] INFO: Scrapy 1.0.3 started (bot: cfservis)
+2015-10-28 15:19:49 [scrapy] INFO: Optional features available: ssl, http11
+2015-10-28 15:19:49 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'cfservis.spiders', 'SPIDER_MODULES': ['cfservis.spiders'], 'FEED_URI': 'file:///Users/marko/PythonProjects/cfservis/items/cfservis/kickstarter_getter/efdade827d7e11e5b4147831c1c9baf0.jl', 'LOG_FILE': 'logs/cfservis/kickstarter_getter/efdade827d7e11e5b4147831c1c9baf0.log', 'BOT_NAME': 'cfservis'}
+2015-10-28 15:19:49 [scrapy] INFO: Enabled extensions: CloseSpider, FeedExporter, TelnetConsole, LogStats, CoreStats, SpiderState
+2015-10-28 15:19:49 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-10-28 15:19:49 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-10-28 15:19:49 [scrapy] INFO: Enabled item pipelines: MySQLStorePipeline
+2015-10-28 15:19:49 [scrapy] INFO: Spider opened
+2015-10-28 15:19:49 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-10-28 15:19:49 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-10-28 15:19:50 [scrapy] DEBUG: Crawled (200) <GET https://www.kickstarter.com/discover/categories/games?sort=newest> (referer: None)
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'149368010'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'149368010', u'Original SHOESTRING BENNY Monopoly Game Piece!', u'Mike Kunkel', u'https://www.kickstarter.com/projects/149368010/original-shoestring-benny-monopoly-game-piece', u'https://ksr-ugc.imgix.net/projects/1823197/photo-original.jpg?v=1445646075&w=218&h=162&fit=crop&auto=format&q=92&s=38ff4c9697b2660e44ad5da93d5e9927', u'Thousand Oaks, CA', u'2015-12-01', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 50, 668547), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Mike Kunkel',
+ 'category_id': 7,
+ 'currency': u'USD',
+ 'end': u'2015-12-01',
+ 'id': u'149368010',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/1823197/photo-original.jpg?v=1445646075&w=218&h=162&fit=crop&auto=format&q=92&s=38ff4c9697b2660e44ad5da93d5e9927',
+ 'location': u'Thousand Oaks, CA',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/149368010/original-shoestring-benny-monopoly-game-piece',
+ 'title': u'Original SHOESTRING BENNY Monopoly Game Piece!',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1509385107'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1509385107', u'Money Marathon - Infinite Runner - iOS and Droid Mobile Game', u'NNterprises - CEO Nathan Nodolski', u'https://www.kickstarter.com/projects/1509385107/money-marathon-infinite-runner-ios-and-droid-mobil', u'https://ksr-ugc.imgix.net/projects/2154844/photo-original.PNG?v=1445955882&w=218&h=162&fit=crop&auto=format&q=92&s=d7eaefba924e132de159489c1f05ea8e', u'New Castle, DE', u'2015-11-27', 20, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 50, 686012), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'NNterprises - CEO Nathan Nodolski',
+ 'category_id': 7,
+ 'currency': u'USD',
+ 'end': u'2015-11-27',
+ 'id': u'1509385107',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2154844/photo-original.PNG?v=1445955882&w=218&h=162&fit=crop&auto=format&q=92&s=d7eaefba924e132de159489c1f05ea8e',
+ 'location': u'New Castle, DE',
+ 'pledged': u'20',
+ 'project_url': u'https://www.kickstarter.com/projects/1509385107/money-marathon-infinite-runner-ios-and-droid-mobil',
+ 'title': u'Money Marathon - Infinite Runner - iOS and Droid Mobile Game',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'svangeffen'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'svangeffen', u'Wormz', u'Sem van Geffen', u'https://www.kickstarter.com/projects/svangeffen/wormz', u'https://ksr-ugc.imgix.net/projects/2091678/photo-original.jpg?v=1444670272&w=218&h=162&fit=crop&auto=format&q=92&s=0a374f65c18506e0d4ecddf75da527dc', u'Rosmalen, Netherlands', u'2015-11-29', 85, 0, u'EUR', datetime.datetime(2015, 10, 28, 15, 19, 50, 700678), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Sem van Geffen',
+ 'category_id': 7,
+ 'currency': u'EUR',
+ 'end': u'2015-11-29',
+ 'id': u'svangeffen',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2091678/photo-original.jpg?v=1444670272&w=218&h=162&fit=crop&auto=format&q=92&s=0a374f65c18506e0d4ecddf75da527dc',
+ 'location': u'Rosmalen, Netherlands',
+ 'pledged': u'85',
+ 'project_url': u'https://www.kickstarter.com/projects/svangeffen/wormz',
+ 'title': u'Wormz',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'2040103712'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'2040103712', u'Trabel, the earth of souls', u'RainbowGames', u'https://www.kickstarter.com/projects/2040103712/trabel-the-earth-of-souls', u'https://ksr-ugc.imgix.net/projects/2122955/photo-original.png?v=1446024131&w=218&h=162&fit=crop&auto=format&q=92&s=710eb6b173fc0775a6e6214b31e0c53f', u'Aschaffenburg, Germany', u'2015-11-27', 10, 0, u'EUR', datetime.datetime(2015, 10, 28, 15, 19, 50, 708030), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'RainbowGames',
+ 'category_id': 7,
+ 'currency': u'EUR',
+ 'end': u'2015-11-27',
+ 'id': u'2040103712',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2122955/photo-original.png?v=1446024131&w=218&h=162&fit=crop&auto=format&q=92&s=710eb6b173fc0775a6e6214b31e0c53f',
+ 'location': u'Aschaffenburg, Germany',
+ 'pledged': u'10',
+ 'project_url': u'https://www.kickstarter.com/projects/2040103712/trabel-the-earth-of-souls',
+ 'title': u'Trabel, the earth of souls',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1986861668'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1986861668', u"Reiner Knizia's Circus Flohcati", u'Grail Games', u'https://www.kickstarter.com/projects/1986861668/reiner-knizias-circus-flohcati', u'https://ksr-ugc.imgix.net/projects/2122670/photo-original.jpg?v=1446030297&w=218&h=162&fit=crop&auto=format&q=92&s=5b44c96aed4ca5f65fed9aedb48a8403', u'Ashfield, AU', u'2015-11-18', 1177, 0, u'AUD', datetime.datetime(2015, 10, 28, 15, 19, 50, 717884), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Grail Games',
+ 'category_id': 7,
+ 'currency': u'AUD',
+ 'end': u'2015-11-18',
+ 'id': u'1986861668',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2122670/photo-original.jpg?v=1446030297&w=218&h=162&fit=crop&auto=format&q=92&s=5b44c96aed4ca5f65fed9aedb48a8403',
+ 'location': u'Ashfield, AU',
+ 'pledged': u'1177',
+ 'project_url': u'https://www.kickstarter.com/projects/1986861668/reiner-knizias-circus-flohcati',
+ 'title': u"Reiner Knizia's Circus Flohcati",
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1095577516'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1095577516', u'Rasta Run', u'Guillem Poy', u'https://www.kickstarter.com/projects/1095577516/rasta-run', u'https://ksr-ugc.imgix.net/projects/2130719/photo-original.png?v=1444646018&w=218&h=162&fit=crop&auto=format&q=92&s=f629cd8355b13f1ea49d943e67cc1aea', u'Barcelona, Spain', u'2015-11-27', 0, 0, u'EUR', datetime.datetime(2015, 10, 28, 15, 19, 50, 725195), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Guillem Poy',
+ 'category_id': 7,
+ 'currency': u'EUR',
+ 'end': u'2015-11-27',
+ 'id': u'1095577516',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2130719/photo-original.png?v=1444646018&w=218&h=162&fit=crop&auto=format&q=92&s=f629cd8355b13f1ea49d943e67cc1aea',
+ 'location': u'Barcelona, Spain',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/1095577516/rasta-run',
+ 'title': u'Rasta Run',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'astrobeargame'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'astrobeargame', u'Shepdoog', u'Astrobear Games', u'https://www.kickstarter.com/projects/astrobeargames/shepdoog', u'https://ksr-ugc.imgix.net/projects/2142182/photo-original.png?v=1445238519&w=218&h=162&fit=crop&auto=format&q=92&s=3e6560aac3b49573c9477ab7c72a8bb6', u'Melbourne, AU', u'2015-11-27', 30, 0, u'AUD', datetime.datetime(2015, 10, 28, 15, 19, 50, 732882), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Astrobear Games',
+ 'category_id': 7,
+ 'currency': u'AUD',
+ 'end': u'2015-11-27',
+ 'id': u'astrobeargame',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2142182/photo-original.png?v=1445238519&w=218&h=162&fit=crop&auto=format&q=92&s=3e6560aac3b49573c9477ab7c72a8bb6',
+ 'location': u'Melbourne, AU',
+ 'pledged': u'30',
+ 'project_url': u'https://www.kickstarter.com/projects/astrobeargames/shepdoog',
+ 'title': u'Shepdoog',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'2011026500'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'2011026500', u'The Paths Before Us', u'Cyrus Fiete', u'https://www.kickstarter.com/projects/2011026500/the-paths-before-us', u'https://ksr-ugc.imgix.net/projects/2131897/photo-original.png?v=1445893770&w=218&h=162&fit=crop&auto=format&q=92&s=e36186fc0d0cd12f15a5cecdc233d7fd', u'Pasadena, CA', u'2015-11-27', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 50, 740505), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Cyrus Fiete',
+ 'category_id': 7,
+ 'currency': u'USD',
+ 'end': u'2015-11-27',
+ 'id': u'2011026500',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2131897/photo-original.png?v=1445893770&w=218&h=162&fit=crop&auto=format&q=92&s=e36186fc0d0cd12f15a5cecdc233d7fd',
+ 'location': u'Pasadena, CA',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/2011026500/the-paths-before-us',
+ 'title': u'The Paths Before Us',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'113060116'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'113060116', u'Dreary Hamlet - A Game of Death and Betrayal', u'Mallegory', u'https://www.kickstarter.com/projects/113060116/dreary-hamlet-a-game-of-death-and-betrayal', u'https://ksr-ugc.imgix.net/projects/2026162/photo-original.jpg?v=1445949114&w=218&h=162&fit=crop&auto=format&q=92&s=7ec40f820389f1e9d7e2ad991b76981a', u'Canberra, AU', u'2015-11-26', 6491, 0, u'AUD', datetime.datetime(2015, 10, 28, 15, 19, 50, 747885), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Mallegory',
+ 'category_id': 7,
+ 'currency': u'AUD',
+ 'end': u'2015-11-26',
+ 'id': u'113060116',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2026162/photo-original.jpg?v=1445949114&w=218&h=162&fit=crop&auto=format&q=92&s=7ec40f820389f1e9d7e2ad991b76981a',
+ 'location': u'Canberra, AU',
+ 'pledged': u'6491',
+ 'project_url': u'https://www.kickstarter.com/projects/113060116/dreary-hamlet-a-game-of-death-and-betrayal',
+ 'title': u'Dreary Hamlet - A Game of Death and Betrayal',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1355854067'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1355854067', u'Manatee Simulator', u'Bill Walsh', u'https://www.kickstarter.com/projects/1355854067/manatee-simulator', u'https://ksr-ugc.imgix.net/projects/2152912/photo-original.jpg?v=1445788365&w=218&h=162&fit=crop&auto=format&q=92&s=88cbabee4bb928e45fbc62259d94395b', u'Downtown Toronto, Canada', u'2015-12-26', 0, 0, u'CAD', datetime.datetime(2015, 10, 28, 15, 19, 50, 755740), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Bill Walsh',
+ 'category_id': 7,
+ 'currency': u'CAD',
+ 'end': u'2015-12-26',
+ 'id': u'1355854067',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2152912/photo-original.jpg?v=1445788365&w=218&h=162&fit=crop&auto=format&q=92&s=88cbabee4bb928e45fbc62259d94395b',
+ 'location': u'Downtown Toronto, Canada',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/1355854067/manatee-simulator',
+ 'title': u'Manatee Simulator',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'350445190'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'350445190', u'Toontownstories: Ninjas in Danger', u'xyTec-Games (N.R)', u'https://www.kickstarter.com/projects/350445190/toontownstories-ninjas-in-danger', u'https://ksr-ugc.imgix.net/projects/2152558/photo-original.png?v=1445801733&w=218&h=162&fit=crop&auto=format&q=92&s=5ea17cf80ded03e0bb20e52ce8bad5fa', u'Hollabrunn, Austria', u'2015-12-26', 0, 0, u'EUR', datetime.datetime(2015, 10, 28, 15, 19, 50, 764256), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'xyTec-Games (N.R)',
+ 'category_id': 7,
+ 'currency': u'EUR',
+ 'end': u'2015-12-26',
+ 'id': u'350445190',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2152558/photo-original.png?v=1445801733&w=218&h=162&fit=crop&auto=format&q=92&s=5ea17cf80ded03e0bb20e52ce8bad5fa',
+ 'location': u'Hollabrunn, Austria',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/350445190/toontownstories-ninjas-in-danger',
+ 'title': u'Toontownstories: Ninjas in Danger',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'406772853'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'406772853', u'The Milers', u'James Cast', u'https://www.kickstarter.com/projects/406772853/the-milers', u'https://ksr-ugc.imgix.net/projects/2152365/photo-original.png?v=1445781061&w=218&h=162&fit=crop&auto=format&q=92&s=5d6237de6d49cf070fc6d905787fa287', u'Richmond, VA', u'2015-11-26', 6, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 50, 772295), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'James Cast',
+ 'category_id': 7,
+ 'currency': u'USD',
+ 'end': u'2015-11-26',
+ 'id': u'406772853',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2152365/photo-original.png?v=1445781061&w=218&h=162&fit=crop&auto=format&q=92&s=5d6237de6d49cf070fc6d905787fa287',
+ 'location': u'Richmond, VA',
+ 'pledged': u'6',
+ 'project_url': u'https://www.kickstarter.com/projects/406772853/the-milers',
+ 'title': u'The Milers',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'keyando'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'keyando', u'Keyando', u'Dirk de Pol', u'https://www.kickstarter.com/projects/keyando/keyando', u'https://ksr-ugc.imgix.net/projects/2133330/photo-original.jpg?v=1445626466&w=218&h=162&fit=crop&auto=format&q=92&s=f8ffdde26f968e065ad88aaebf2df262', u'Berlin, Germany', u'2015-11-26', 1772, 0, u'EUR', datetime.datetime(2015, 10, 28, 15, 19, 50, 779750), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Dirk de Pol',
+ 'category_id': 7,
+ 'currency': u'EUR',
+ 'end': u'2015-11-26',
+ 'id': u'keyando',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2133330/photo-original.jpg?v=1445626466&w=218&h=162&fit=crop&auto=format&q=92&s=f8ffdde26f968e065ad88aaebf2df262',
+ 'location': u'Berlin, Germany',
+ 'pledged': u'1772',
+ 'project_url': u'https://www.kickstarter.com/projects/keyando/keyando',
+ 'title': u'Keyando',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1836795592'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1836795592', u'Notice Me, Senpai!', u'Byron Ginn', u'https://www.kickstarter.com/projects/1836795592/notice-me-senpai', u'https://ksr-ugc.imgix.net/projects/2139577/photo-original.jpg?v=1445672840&w=218&h=162&fit=crop&auto=format&q=92&s=9f61608b5e51ceb2f33dc2a15054a40b', u'Reno, NV', u'2015-11-26', 65, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 50, 787411), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Byron Ginn',
+ 'category_id': 7,
+ 'currency': u'USD',
+ 'end': u'2015-11-26',
+ 'id': u'1836795592',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2139577/photo-original.jpg?v=1445672840&w=218&h=162&fit=crop&auto=format&q=92&s=9f61608b5e51ceb2f33dc2a15054a40b',
+ 'location': u'Reno, NV',
+ 'pledged': u'65',
+ 'project_url': u'https://www.kickstarter.com/projects/1836795592/notice-me-senpai',
+ 'title': u'Notice Me, Senpai!',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'rosamosi'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'rosamosi', u'Mussiland', u'Margret Juliana Sigurdardottir', u'https://www.kickstarter.com/projects/rosamosi/mussiland', u'https://ksr-ugc.imgix.net/projects/2156069/photo-original.png?v=1445952578&w=218&h=162&fit=crop&auto=format&q=92&s=ad1c3f3b2983f8f2becce2a8e302c067', u'Reykjavik, Iceland', u'2015-11-30', 696, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 50, 795360), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Margret Juliana Sigurdardottir',
+ 'category_id': 7,
+ 'currency': u'USD',
+ 'end': u'2015-11-30',
+ 'id': u'rosamosi',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2156069/photo-original.png?v=1445952578&w=218&h=162&fit=crop&auto=format&q=92&s=ad1c3f3b2983f8f2becce2a8e302c067',
+ 'location': u'Reykjavik, Iceland',
+ 'pledged': u'696',
+ 'project_url': u'https://www.kickstarter.com/projects/rosamosi/mussiland',
+ 'title': u'Mussiland',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'gxaustralia'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'gxaustralia', u"GX Australia 2016 \\u2014 Australia's first queer geek/gaming con!", u'GX Australia', u'https://www.kickstarter.com/projects/gxaustralia/gx-australia-2016-australias-first-queer-geek-gami', u'https://ksr-ugc.imgix.net/projects/2122571/photo-original.jpg?v=1444200849&w=218&h=162&fit=crop&auto=format&q=92&s=6837a0d260c430a6cc6e5d75b575899d', u'Sydney, AU', u'2015-11-26', 6719, 0, u'AUD', datetime.datetime(2015, 10, 28, 15, 19, 50, 803239), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'GX Australia',
+ 'category_id': 7,
+ 'currency': u'AUD',
+ 'end': u'2015-11-26',
+ 'id': u'gxaustralia',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2122571/photo-original.jpg?v=1444200849&w=218&h=162&fit=crop&auto=format&q=92&s=6837a0d260c430a6cc6e5d75b575899d',
+ 'location': u'Sydney, AU',
+ 'pledged': u'6719',
+ 'project_url': u'https://www.kickstarter.com/projects/gxaustralia/gx-australia-2016-australias-first-queer-geek-gami',
+ 'title': u"GX Australia 2016 \\u2014 Australia's first queer geek/gaming con!",
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'funtabletent'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'funtabletent', u'Fun Table Tents', u'Craig Balme', u'https://www.kickstarter.com/projects/funtabletents/fun-table-tents', u'https://ksr-ugc.imgix.net/projects/976338/photo-original.png?v=1445262326&w=218&h=162&fit=crop&auto=format&q=92&s=686cb0e4dbad9af58fa3ff49b2d129a8', u'Providence, RI', u'2015-12-06', 78, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 50, 813113), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Craig Balme',
+ 'category_id': 7,
+ 'currency': u'USD',
+ 'end': u'2015-12-06',
+ 'id': u'funtabletent',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/976338/photo-original.png?v=1445262326&w=218&h=162&fit=crop&auto=format&q=92&s=686cb0e4dbad9af58fa3ff49b2d129a8',
+ 'location': u'Providence, RI',
+ 'pledged': u'78',
+ 'project_url': u'https://www.kickstarter.com/projects/funtabletents/fun-table-tents',
+ 'title': u'Fun Table Tents',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1302368205'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1302368205', u'Hive Mind Game', u'Sean + Friends', u'https://www.kickstarter.com/projects/1302368205/hive-mind-game', u'https://ksr-ugc.imgix.net/projects/2119671/photo-original.jpg?v=1445468452&w=218&h=162&fit=crop&auto=format&q=92&s=2897e3096b37d23bc71a42a918672175', u'Denver, CO', u'2015-11-26', 767, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 50, 822525), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Sean + Friends',
+ 'category_id': 7,
+ 'currency': u'USD',
+ 'end': u'2015-11-26',
+ 'id': u'1302368205',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2119671/photo-original.jpg?v=1445468452&w=218&h=162&fit=crop&auto=format&q=92&s=2897e3096b37d23bc71a42a918672175',
+ 'location': u'Denver, CO',
+ 'pledged': u'767',
+ 'project_url': u'https://www.kickstarter.com/projects/1302368205/hive-mind-game',
+ 'title': u'Hive Mind Game',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'2068559747'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'2068559747', u'Interactive Video Game Console For Action Games', u'Demo', u'https://www.kickstarter.com/projects/2068559747/interactive-video-game-console-for-action-games', u'https://ksr-ugc.imgix.net/projects/2149808/photo-original.png?v=1445596277&w=218&h=162&fit=crop&auto=format&q=92&s=008100194c3b1eefa6caba093648df93', u'Atlanta, GA', u'2015-11-26', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 50, 830711), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Demo',
+ 'category_id': 7,
+ 'currency': u'USD',
+ 'end': u'2015-11-26',
+ 'id': u'2068559747',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2149808/photo-original.png?v=1445596277&w=218&h=162&fit=crop&auto=format&q=92&s=008100194c3b1eefa6caba093648df93',
+ 'location': u'Atlanta, GA',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/2068559747/interactive-video-game-console-for-action-games',
+ 'title': u'Interactive Video Game Console For Action Games',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'213168680'])
+2015-10-28 15:19:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'213168680', u'Royal House Limited Edition by Edgy Brothers', u'Edgy Brothers', u'https://www.kickstarter.com/projects/213168680/royal-house-limited-edition-by-edgy-brothers', u'https://ksr-ugc.imgix.net/projects/2153244/photo-original.jpg?v=1445971137&w=218&h=162&fit=crop&auto=format&q=92&s=7079958c6c2c11b941a84644f07b5283', u'Los Angeles, CA', u'2015-11-19', 6458, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 50, 839214), 1, 1, 1, 7])
+2015-10-28 15:19:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/games?sort=newest>
+{'author': u'Edgy Brothers',
+ 'category_id': 7,
+ 'currency': u'USD',
+ 'end': u'2015-11-19',
+ 'id': u'213168680',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2153244/photo-original.jpg?v=1445971137&w=218&h=162&fit=crop&auto=format&q=92&s=7079958c6c2c11b941a84644f07b5283',
+ 'location': u'Los Angeles, CA',
+ 'pledged': u'6458',
+ 'project_url': u'https://www.kickstarter.com/projects/213168680/royal-house-limited-edition-by-edgy-brothers',
+ 'title': u'Royal House Limited Edition by Edgy Brothers',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:50 [scrapy] INFO: Closing spider (finished)
+2015-10-28 15:19:50 [scrapy] INFO: Stored jsonlines feed (20 items) in: file:///Users/marko/PythonProjects/cfservis/items/cfservis/kickstarter_getter/efdade827d7e11e5b4147831c1c9baf0.jl
+2015-10-28 15:19:50 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 254,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 81430,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2015, 10, 28, 14, 19, 50, 843501),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 62,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2015, 10, 28, 14, 19, 49, 510115)}
+2015-10-28 15:19:50 [scrapy] INFO: Spider closed (finished)

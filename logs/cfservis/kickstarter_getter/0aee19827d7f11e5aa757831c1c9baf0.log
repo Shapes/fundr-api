@@ -1,0 +1,332 @@
+2015-10-28 15:20:49 [scrapy] INFO: Scrapy 1.0.3 started (bot: cfservis)
+2015-10-28 15:20:49 [scrapy] INFO: Optional features available: ssl, http11
+2015-10-28 15:20:49 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'cfservis.spiders', 'SPIDER_MODULES': ['cfservis.spiders'], 'FEED_URI': 'file:///Users/marko/PythonProjects/cfservis/items/cfservis/kickstarter_getter/0aee19827d7f11e5aa757831c1c9baf0.jl', 'LOG_FILE': 'logs/cfservis/kickstarter_getter/0aee19827d7f11e5aa757831c1c9baf0.log', 'BOT_NAME': 'cfservis'}
+2015-10-28 15:20:49 [scrapy] INFO: Enabled extensions: CloseSpider, FeedExporter, TelnetConsole, LogStats, CoreStats, SpiderState
+2015-10-28 15:20:49 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-10-28 15:20:49 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-10-28 15:20:49 [scrapy] INFO: Enabled item pipelines: MySQLStorePipeline
+2015-10-28 15:20:49 [scrapy] INFO: Spider opened
+2015-10-28 15:20:49 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-10-28 15:20:49 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-10-28 15:20:50 [scrapy] DEBUG: Crawled (200) <GET https://www.kickstarter.com/discover/categories/music?sort=newest> (referer: None)
+2015-10-28 15:20:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1624908458'])
+2015-10-28 15:20:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1624908458', u'Kabreet: "Momken Bokra" Album Production', u'Kabreet', u'https://www.kickstarter.com/projects/1624908458/kabreet-momken-bokra-album-production', u'https://ksr-ugc.imgix.net/projects/2110884/photo-original.jpg?v=1446030153&w=218&h=162&fit=crop&auto=format&q=92&s=dd3c126e93b388588b25c995b25c919f', u'Berlin, Germany', u'2015-11-27', 0, 0, u'EUR', datetime.datetime(2015, 10, 28, 15, 20, 50, 983463), 1, 1, 1, 6])
+2015-10-28 15:20:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Kabreet',
+ 'category_id': 6,
+ 'currency': u'EUR',
+ 'end': u'2015-11-27',
+ 'id': u'1624908458',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2110884/photo-original.jpg?v=1446030153&w=218&h=162&fit=crop&auto=format&q=92&s=dd3c126e93b388588b25c995b25c919f',
+ 'location': u'Berlin, Germany',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/1624908458/kabreet-momken-bokra-album-production',
+ 'title': u'Kabreet: "Momken Bokra" Album Production',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:50 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'646582826'])
+2015-10-28 15:20:50 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'646582826', u'Ear Rape Project', u'Dr. K Ear Rape', u'https://www.kickstarter.com/projects/646582826/ear-rape-project', u'https://ksr-ugc.imgix.net/projects/2152001/photo-original.jpg?v=1445721533&w=218&h=162&fit=crop&auto=format&q=92&s=e177399f41cd69b039d0895a981772d0', u'Charleston, SC', u'2015-11-27', 0, 0, u'SEK', datetime.datetime(2015, 10, 28, 15, 20, 50, 992929), 1, 1, 1, 6])
+2015-10-28 15:20:50 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Dr. K Ear Rape',
+ 'category_id': 6,
+ 'currency': u'SEK',
+ 'end': u'2015-11-27',
+ 'id': u'646582826',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2152001/photo-original.jpg?v=1445721533&w=218&h=162&fit=crop&auto=format&q=92&s=e177399f41cd69b039d0895a981772d0',
+ 'location': u'Charleston, SC',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/646582826/ear-rape-project',
+ 'title': u'Ear Rape Project',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1386310206'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1386310206', u'Little Metropolis Album & Book', u'Adam Horovitz & Joe Reeve', u'https://www.kickstarter.com/projects/1386310206/little-metropolis-album-and-book', u'https://ksr-ugc.imgix.net/projects/2143538/photo-original.jpg?v=1446026524&w=218&h=162&fit=crop&auto=format&q=92&s=4a43b2be880dc181235245e6f4a56fef', u'Stroud, UK', u'2015-11-18', 46, 0, u'GBP', datetime.datetime(2015, 10, 28, 15, 20, 51, 1332), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Adam Horovitz & Joe Reeve',
+ 'category_id': 6,
+ 'currency': u'GBP',
+ 'end': u'2015-11-18',
+ 'id': u'1386310206',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2143538/photo-original.jpg?v=1446026524&w=218&h=162&fit=crop&auto=format&q=92&s=4a43b2be880dc181235245e6f4a56fef',
+ 'location': u'Stroud, UK',
+ 'pledged': u'46',
+ 'project_url': u'https://www.kickstarter.com/projects/1386310206/little-metropolis-album-and-book',
+ 'title': u'Little Metropolis Album & Book',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'justanotherfilmmaker'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'justanotherfilmmaker', u'He Knows Not: Debut Album', u'Travis Pennington', u'https://www.kickstarter.com/projects/justanotherfilmmaker/he-knows-not-debut-album', u'https://ksr-ugc.imgix.net/projects/2149110/photo-original.jpg?v=1445597329&w=218&h=162&fit=crop&auto=format&q=92&s=2bf0b3afbfaf24e4a14b36d65f5081be', u'Launceston, AU', u'2015-12-12', 0, 0, u'AUD', datetime.datetime(2015, 10, 28, 15, 20, 51, 9231), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Travis Pennington',
+ 'category_id': 6,
+ 'currency': u'AUD',
+ 'end': u'2015-12-12',
+ 'id': u'justanotherfilmmaker',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2149110/photo-original.jpg?v=1445597329&w=218&h=162&fit=crop&auto=format&q=92&s=2bf0b3afbfaf24e4a14b36d65f5081be',
+ 'location': u'Launceston, AU',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/justanotherfilmmaker/he-knows-not-debut-album',
+ 'title': u'He Knows Not: Debut Album',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1150992976'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1150992976', u"Be A Part Of Your Fearless Leader's Upcoming Album!", u'Your Fearless Leader', u'https://www.kickstarter.com/projects/1150992976/be-a-part-of-your-fearless-leaders-upcoming-album', u'https://ksr-ugc.imgix.net/projects/1235086/photo-original.jpg?v=1444327299&w=218&h=162&fit=crop&auto=format&q=92&s=b08ab3d8bff6a04c35c11270d2effc9e', u'San Francisco, CA', u'2015-11-27', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 17459), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Your Fearless Leader',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-11-27',
+ 'id': u'1150992976',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/1235086/photo-original.jpg?v=1444327299&w=218&h=162&fit=crop&auto=format&q=92&s=b08ab3d8bff6a04c35c11270d2effc9e',
+ 'location': u'San Francisco, CA',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/1150992976/be-a-part-of-your-fearless-leaders-upcoming-album',
+ 'title': u"Be A Part Of Your Fearless Leader's Upcoming Album!",
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'214924544'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'214924544', u"Matt Cudby & Erin Brown's First Album", u'Erin Brown', u'https://www.kickstarter.com/projects/214924544/matt-cudby-and-erin-browns-first-album', u'https://ksr-ugc.imgix.net/projects/2156985/photo-original.jpg?v=1445978392&w=218&h=162&fit=crop&auto=format&q=92&s=aa7d966c7618c28d938eb0cb018481e9', u'Bury St. Edmunds, UK', u'2015-11-30', 270, 0, u'GBP', datetime.datetime(2015, 10, 28, 15, 20, 51, 25327), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Erin Brown',
+ 'category_id': 6,
+ 'currency': u'GBP',
+ 'end': u'2015-11-30',
+ 'id': u'214924544',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2156985/photo-original.jpg?v=1445978392&w=218&h=162&fit=crop&auto=format&q=92&s=aa7d966c7618c28d938eb0cb018481e9',
+ 'location': u'Bury St. Edmunds, UK',
+ 'pledged': u'270',
+ 'project_url': u'https://www.kickstarter.com/projects/214924544/matt-cudby-and-erin-browns-first-album',
+ 'title': u"Matt Cudby & Erin Brown's First Album",
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1187140700'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1187140700', u'MARK MALLMAN "THE END IS NOT THE END" - the new studio album', u'Mark Mallman', u'https://www.kickstarter.com/projects/1187140700/mark-mallman-the-end-is-not-the-end-the-new-studio', u'https://ksr-ugc.imgix.net/projects/2098418/photo-original.jpg?v=1445308788&w=218&h=162&fit=crop&auto=format&q=92&s=ebbd0c3f5cb00fc28fdef8ef50d49dc8', u'Minneapolis, MN', u'2015-11-29', 735, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 33287), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Mark Mallman',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-11-29',
+ 'id': u'1187140700',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2098418/photo-original.jpg?v=1445308788&w=218&h=162&fit=crop&auto=format&q=92&s=ebbd0c3f5cb00fc28fdef8ef50d49dc8',
+ 'location': u'Minneapolis, MN',
+ 'pledged': u'735',
+ 'project_url': u'https://www.kickstarter.com/projects/1187140700/mark-mallman-the-end-is-not-the-end-the-new-studio',
+ 'title': u'MARK MALLMAN "THE END IS NOT THE END" - the new studio album',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'asylum817'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'asylum817', u'In Search of the Shaman', u'Billie Dean Shoemate III', u'https://www.kickstarter.com/projects/asylum817/in-search-of-the-shaman', u'https://ksr-ugc.imgix.net/projects/2157620/photo-original.jpg?v=1446004371&w=218&h=162&fit=crop&auto=format&q=92&s=97ac340adf3187041c8477a22c0d57bd', u'Paducah, KY', u'2015-12-01', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 41450), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Billie Dean Shoemate III',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-12-01',
+ 'id': u'asylum817',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2157620/photo-original.jpg?v=1446004371&w=218&h=162&fit=crop&auto=format&q=92&s=97ac340adf3187041c8477a22c0d57bd',
+ 'location': u'Paducah, KY',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/asylum817/in-search-of-the-shaman',
+ 'title': u'In Search of the Shaman',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1233532845'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1233532845', u"Palaye Royale: Stayin' Alive on Tour", u'Palaye Royale', u'https://www.kickstarter.com/projects/1233532845/palaye-royale-stayin-alive-on-tour', u'https://ksr-ugc.imgix.net/projects/2155393/photo-original.jpg?v=1445905706&w=218&h=162&fit=crop&auto=format&q=92&s=94efcaa9b633982a0a6ff6fb79f86ec9', u'Los Angeles, CA', u'2015-11-21', 610, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 49520), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Palaye Royale',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-11-21',
+ 'id': u'1233532845',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2155393/photo-original.jpg?v=1445905706&w=218&h=162&fit=crop&auto=format&q=92&s=94efcaa9b633982a0a6ff6fb79f86ec9',
+ 'location': u'Los Angeles, CA',
+ 'pledged': u'610',
+ 'project_url': u'https://www.kickstarter.com/projects/1233532845/palaye-royale-stayin-alive-on-tour',
+ 'title': u"Palaye Royale: Stayin' Alive on Tour",
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'letterstoabigail'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'letterstoabigail', u"Letters To Abigail's Sophomore Album", u'Letters To Abigail', u'https://www.kickstarter.com/projects/letterstoabigail/letters-to-abigails-sophomore-album', u'https://ksr-ugc.imgix.net/projects/1942204/photo-original.jpg?v=1436807722&w=218&h=162&fit=crop&auto=format&q=92&s=ce9cf7bd994d2960240ab3a0d24c889e', u'Asheville, NC', u'2015-12-01', 405, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 57914), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Letters To Abigail',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-12-01',
+ 'id': u'letterstoabigail',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/1942204/photo-original.jpg?v=1436807722&w=218&h=162&fit=crop&auto=format&q=92&s=ce9cf7bd994d2960240ab3a0d24c889e',
+ 'location': u'Asheville, NC',
+ 'pledged': u'405',
+ 'project_url': u'https://www.kickstarter.com/projects/letterstoabigail/letters-to-abigails-sophomore-album',
+ 'title': u"Letters To Abigail's Sophomore Album",
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'922331003'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'922331003', u'But God - Our First Single', u'Jon Bockhorst', u'https://www.kickstarter.com/projects/922331003/but-god-our-first-single', u'https://ksr-ugc.imgix.net/projects/2152142/photo-original.jpg?v=1445884802&w=218&h=162&fit=crop&auto=format&q=92&s=953b3137b55470daa7f27dff5994d5f6', u'St. Louis, MO', u'2015-11-26', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 65501), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Jon Bockhorst',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-11-26',
+ 'id': u'922331003',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2152142/photo-original.jpg?v=1445884802&w=218&h=162&fit=crop&auto=format&q=92&s=953b3137b55470daa7f27dff5994d5f6',
+ 'location': u'St. Louis, MO',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/922331003/but-god-our-first-single',
+ 'title': u'But God - Our First Single',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'129855063'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'129855063', u'New Music, Upcoming Artist, Record Label, Music Industry', u'Tonoso', u'https://www.kickstarter.com/projects/129855063/new-music-upcoming-artist-record-label-music-indus', u'https://ksr-ugc.imgix.net/projects/1766986/photo-original.jpg?v=1445988647&w=218&h=162&fit=crop&auto=format&q=92&s=dc0206feca967678ee6059945ad8fd84', u'Port Jefferson Station, NY', u'2015-11-26', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 73179), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Tonoso',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-11-26',
+ 'id': u'129855063',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/1766986/photo-original.jpg?v=1445988647&w=218&h=162&fit=crop&auto=format&q=92&s=dc0206feca967678ee6059945ad8fd84',
+ 'location': u'Port Jefferson Station, NY',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/129855063/new-music-upcoming-artist-record-label-music-indus',
+ 'title': u'New Music, Upcoming Artist, Record Label, Music Industry',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'homegroan'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'homegroan', u'The Road of your Life - Home Groan', u'Brendan Won', u'https://www.kickstarter.com/projects/homegroan/the-road-of-your-life-home-groan', u'https://ksr-ugc.imgix.net/projects/1632189/photo-original.jpg?v=1422588292&w=218&h=162&fit=crop&auto=format&q=92&s=1b35ad0c833f5fd7ef45bde8417c2767', u'Chicago, IL', u'2015-11-26', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 83061), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Brendan Won',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-11-26',
+ 'id': u'homegroan',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/1632189/photo-original.jpg?v=1422588292&w=218&h=162&fit=crop&auto=format&q=92&s=1b35ad0c833f5fd7ef45bde8417c2767',
+ 'location': u'Chicago, IL',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/homegroan/the-road-of-your-life-home-groan',
+ 'title': u'The Road of your Life - Home Groan',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1102180064'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1102180064', u'My Freshman Year', u'Travis Hamn', u'https://www.kickstarter.com/projects/1102180064/my-freshman-year-0', u'https://ksr-ugc.imgix.net/projects/2156419/photo-original.png?v=1445959312&w=218&h=162&fit=crop&auto=format&q=92&s=94d130b1365b39602191a853f3b49580', u'Fredericksburg, VA', u'2015-11-10', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 91164), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Travis Hamn',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-11-10',
+ 'id': u'1102180064',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2156419/photo-original.png?v=1445959312&w=218&h=162&fit=crop&auto=format&q=92&s=94d130b1365b39602191a853f3b49580',
+ 'location': u'Fredericksburg, VA',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/1102180064/my-freshman-year-0',
+ 'title': u'My Freshman Year',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1817315649'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1817315649', u'Hudson & Haw - Debut Full Length Album', u'Hudson & Haw', u'https://www.kickstarter.com/projects/1817315649/hudson-and-haw-debut-full-length-album', u'https://ksr-ugc.imgix.net/projects/2148903/photo-original.jpeg?v=1445543926&w=218&h=162&fit=crop&auto=format&q=92&s=0f8a25c798c8f63d9a93172c07201c39', u'Chapel Hill, NC', u'2015-11-27', 1262, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 100152), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Hudson & Haw',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-11-27',
+ 'id': u'1817315649',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2148903/photo-original.jpeg?v=1445543926&w=218&h=162&fit=crop&auto=format&q=92&s=0f8a25c798c8f63d9a93172c07201c39',
+ 'location': u'Chapel Hill, NC',
+ 'pledged': u'1262',
+ 'project_url': u'https://www.kickstarter.com/projects/1817315649/hudson-and-haw-debut-full-length-album',
+ 'title': u'Hudson & Haw - Debut Full Length Album',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1687145947'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1687145947', u'Sean Lusk-Juliette Music Video', u'Sean Lusk', u'https://www.kickstarter.com/projects/1687145947/sean-lusk-juliette-music-video', u'https://ksr-ugc.imgix.net/projects/2072832/photo-original.jpg?v=1441827287&w=218&h=162&fit=crop&auto=format&q=92&s=922efd3c2531146413ee67d2d932c7ce', u'Hollywood, Los Angeles, CA', u'2015-12-10', 100, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 108072), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Sean Lusk',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-12-10',
+ 'id': u'1687145947',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2072832/photo-original.jpg?v=1441827287&w=218&h=162&fit=crop&auto=format&q=92&s=922efd3c2531146413ee67d2d932c7ce',
+ 'location': u'Hollywood, Los Angeles, CA',
+ 'pledged': u'100',
+ 'project_url': u'https://www.kickstarter.com/projects/1687145947/sean-lusk-juliette-music-video',
+ 'title': u'Sean Lusk-Juliette Music Video',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1594095105'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1594095105', u'Send me to... Musicultura! Mandatemi a... Musicultura!', u'Mk', u'https://www.kickstarter.com/projects/1594095105/send-me-to-musicultura-mandatemi-a-musicultura', u'https://ksr-ugc.imgix.net/projects/2155254/photo-original.png?v=1445898089&w=218&h=162&fit=crop&auto=format&q=92&s=0ee958caae71952fa4da88bd59ec8e95', u'Recanati, Italy', u'2015-11-03', 0, 0, u'EUR', datetime.datetime(2015, 10, 28, 15, 20, 51, 116434), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Mk',
+ 'category_id': 6,
+ 'currency': u'EUR',
+ 'end': u'2015-11-03',
+ 'id': u'1594095105',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2155254/photo-original.png?v=1445898089&w=218&h=162&fit=crop&auto=format&q=92&s=0ee958caae71952fa4da88bd59ec8e95',
+ 'location': u'Recanati, Italy',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/1594095105/send-me-to-musicultura-mandatemi-a-musicultura',
+ 'title': u'Send me to... Musicultura! Mandatemi a... Musicultura!',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1478827494'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1478827494', u'"Rio Mamba" - The music of Tim "Timberwolf" Jordan', u'Tim Timberwolf Jordan', u'https://www.kickstarter.com/projects/1478827494/rio-mamba-the-music-of-tim-timberwolf-jordan', u'https://ksr-ugc.imgix.net/projects/2147943/photo-original.png?v=1445492454&w=218&h=162&fit=crop&auto=format&q=92&s=bcba87b2b12bc64b748222b04feaad6e', u'North Atlanta, GA', u'2015-12-20', 400, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 125644), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Tim Timberwolf Jordan',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-12-20',
+ 'id': u'1478827494',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2147943/photo-original.png?v=1445492454&w=218&h=162&fit=crop&auto=format&q=92&s=bcba87b2b12bc64b748222b04feaad6e',
+ 'location': u'North Atlanta, GA',
+ 'pledged': u'400',
+ 'project_url': u'https://www.kickstarter.com/projects/1478827494/rio-mamba-the-music-of-tim-timberwolf-jordan',
+ 'title': u'"Rio Mamba" - The music of Tim "Timberwolf" Jordan',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'443616149'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'443616149', u'Mongolian Folk Concert at Carnegie Hall (*Tengger Cavalry)', u'Nature Ganganbaigal', u'https://www.kickstarter.com/projects/443616149/mongolian-folk-concert-at-carnegie-hall-tengger-ca', u'https://ksr-ugc.imgix.net/projects/2115669/photo-original.jpg?v=1443849823&w=218&h=162&fit=crop&auto=format&q=92&s=6630de7bfa51f107e4f4a6c56327fb92', u'Manhattan, NY', u'2015-12-26', 135, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 133791), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Nature Ganganbaigal',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-12-26',
+ 'id': u'443616149',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2115669/photo-original.jpg?v=1443849823&w=218&h=162&fit=crop&auto=format&q=92&s=6630de7bfa51f107e4f4a6c56327fb92',
+ 'location': u'Manhattan, NY',
+ 'pledged': u'135',
+ 'project_url': u'https://www.kickstarter.com/projects/443616149/mongolian-folk-concert-at-carnegie-hall-tengger-ca',
+ 'title': u'Mongolian Folk Concert at Carnegie Hall (*Tengger Cavalry)',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1751524416'])
+2015-10-28 15:20:51 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1751524416', u'JESUS THE SAVIOR', u'Vito Michele Fiorentino', u'https://www.kickstarter.com/projects/1751524416/jesus-the-savior', u'https://ksr-ugc.imgix.net/projects/2150882/photo-original.JPG?v=1445645849&w=218&h=162&fit=crop&auto=format&q=92&s=caa6f369f79a27b58b3d7f43b9a170fc', u'South Florida, FL', u'2015-12-21', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 20, 51, 141956), 1, 1, 1, 6])
+2015-10-28 15:20:51 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/music?sort=newest>
+{'author': u'Vito Michele Fiorentino',
+ 'category_id': 6,
+ 'currency': u'USD',
+ 'end': u'2015-12-21',
+ 'id': u'1751524416',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2150882/photo-original.JPG?v=1445645849&w=218&h=162&fit=crop&auto=format&q=92&s=caa6f369f79a27b58b3d7f43b9a170fc',
+ 'location': u'South Florida, FL',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/1751524416/jesus-the-savior',
+ 'title': u'JESUS THE SAVIOR',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:20:51 [scrapy] INFO: Closing spider (finished)
+2015-10-28 15:20:51 [scrapy] INFO: Stored jsonlines feed (20 items) in: file:///Users/marko/PythonProjects/cfservis/items/cfservis/kickstarter_getter/0aee19827d7f11e5aa757831c1c9baf0.jl
+2015-10-28 15:20:51 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 254,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 81358,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2015, 10, 28, 14, 20, 51, 146293),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 62,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2015, 10, 28, 14, 20, 49, 503343)}
+2015-10-28 15:20:51 [scrapy] INFO: Spider closed (finished)

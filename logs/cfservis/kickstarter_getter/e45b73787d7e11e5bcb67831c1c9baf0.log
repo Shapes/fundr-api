@@ -1,0 +1,332 @@
+2015-10-28 15:19:29 [scrapy] INFO: Scrapy 1.0.3 started (bot: cfservis)
+2015-10-28 15:19:29 [scrapy] INFO: Optional features available: ssl, http11
+2015-10-28 15:19:29 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'cfservis.spiders', 'SPIDER_MODULES': ['cfservis.spiders'], 'FEED_URI': 'file:///Users/marko/PythonProjects/cfservis/items/cfservis/kickstarter_getter/e45b73787d7e11e5bcb67831c1c9baf0.jl', 'LOG_FILE': 'logs/cfservis/kickstarter_getter/e45b73787d7e11e5bcb67831c1c9baf0.log', 'BOT_NAME': 'cfservis'}
+2015-10-28 15:19:29 [scrapy] INFO: Enabled extensions: CloseSpider, FeedExporter, TelnetConsole, LogStats, CoreStats, SpiderState
+2015-10-28 15:19:29 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-10-28 15:19:29 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-10-28 15:19:29 [scrapy] INFO: Enabled item pipelines: MySQLStorePipeline
+2015-10-28 15:19:29 [scrapy] INFO: Spider opened
+2015-10-28 15:19:29 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-10-28 15:19:29 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-10-28 15:19:30 [scrapy] DEBUG: Crawled (200) <GET https://www.kickstarter.com/discover/categories/food?sort=newest> (referer: None)
+2015-10-28 15:19:30 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1386184751'])
+2015-10-28 15:19:30 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1386184751', u'The Craft Coffee Company - Cardiff', u'Paul Griffiths', u'https://www.kickstarter.com/projects/1386184751/the-craft-coffee-company-cardiff', u'https://ksr-ugc.imgix.net/projects/2138518/photo-original.jpg?v=1445009967&w=218&h=162&fit=crop&auto=format&q=92&s=bad643f134d5fdeb64e7c41d751005e2', u'Cardiff, UK', u'2015-11-27', 0, 0, u'GBP', datetime.datetime(2015, 10, 28, 15, 19, 30, 938502), 1, 1, 1, 8])
+2015-10-28 15:19:30 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Paul Griffiths',
+ 'category_id': 8,
+ 'currency': u'GBP',
+ 'end': u'2015-11-27',
+ 'id': u'1386184751',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2138518/photo-original.jpg?v=1445009967&w=218&h=162&fit=crop&auto=format&q=92&s=bad643f134d5fdeb64e7c41d751005e2',
+ 'location': u'Cardiff, UK',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/1386184751/the-craft-coffee-company-cardiff',
+ 'title': u'The Craft Coffee Company - Cardiff',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:30 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'809030265'])
+2015-10-28 15:19:30 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'809030265', u'Turn On The Red Light For Lucie', u'Chef Lucie Meyers', u'https://www.kickstarter.com/projects/809030265/turn-on-the-red-light-for-lucie', u'https://ksr-ugc.imgix.net/projects/2141663/photo-original.JPG?v=1445615554&w=218&h=162&fit=crop&auto=format&q=92&s=58140cd21ed372ea1ab3f49630e80b11', u'Lexington, KY', u'2015-11-29', 1200, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 30, 955356), 1, 1, 1, 8])
+2015-10-28 15:19:30 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Chef Lucie Meyers',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-11-29',
+ 'id': u'809030265',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2141663/photo-original.JPG?v=1445615554&w=218&h=162&fit=crop&auto=format&q=92&s=58140cd21ed372ea1ab3f49630e80b11',
+ 'location': u'Lexington, KY',
+ 'pledged': u'1200',
+ 'project_url': u'https://www.kickstarter.com/projects/809030265/turn-on-the-red-light-for-lucie',
+ 'title': u'Turn On The Red Light For Lucie',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:30 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'696483816'])
+2015-10-28 15:19:30 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'696483816', u'Lunch Anyone', u'The Sandwich People', u'https://www.kickstarter.com/projects/696483816/lunch-anyone', u'https://ksr-ugc.imgix.net/projects/2001620/photo-original.png?v=1438213155&w=218&h=162&fit=crop&auto=format&q=92&s=b0f4e5a0b73d8fd1f88ba2bdbe0d07d3', u'Cricklewood, UK', u'2015-11-28', 0, 0, u'GBP', datetime.datetime(2015, 10, 28, 15, 19, 30, 963452), 1, 1, 1, 8])
+2015-10-28 15:19:30 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'The Sandwich People',
+ 'category_id': 8,
+ 'currency': u'GBP',
+ 'end': u'2015-11-28',
+ 'id': u'696483816',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2001620/photo-original.png?v=1438213155&w=218&h=162&fit=crop&auto=format&q=92&s=b0f4e5a0b73d8fd1f88ba2bdbe0d07d3',
+ 'location': u'Cricklewood, UK',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/696483816/lunch-anyone',
+ 'title': u'Lunch Anyone',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:30 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1648712375'])
+2015-10-28 15:19:30 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1648712375', u'Pint Pursuits Brewing Co.', u'Matthew Cummings', u'https://www.kickstarter.com/projects/1648712375/pint-pursuits-brewing-co', u'https://ksr-ugc.imgix.net/projects/2100122/photo-original.jpg?v=1445830326&w=218&h=162&fit=crop&auto=format&q=92&s=10e861b5e696279d0d0b5011ccfeffed', u'St. Thomas, Canada', u'2015-12-06', 290, 0, u'CAD', datetime.datetime(2015, 10, 28, 15, 19, 30, 971735), 1, 1, 1, 8])
+2015-10-28 15:19:30 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Matthew Cummings',
+ 'category_id': 8,
+ 'currency': u'CAD',
+ 'end': u'2015-12-06',
+ 'id': u'1648712375',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2100122/photo-original.jpg?v=1445830326&w=218&h=162&fit=crop&auto=format&q=92&s=10e861b5e696279d0d0b5011ccfeffed',
+ 'location': u'St. Thomas, Canada',
+ 'pledged': u'290',
+ 'project_url': u'https://www.kickstarter.com/projects/1648712375/pint-pursuits-brewing-co',
+ 'title': u'Pint Pursuits Brewing Co.',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:30 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1643559920'])
+2015-10-28 15:19:30 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1643559920', u'1803 Bacon & Brews  - Columbus Ohio', u'1803 Bacon', u'https://www.kickstarter.com/projects/1643559920/1803-bacon-and-brews-columbus-ohio', u'https://ksr-ugc.imgix.net/projects/1979220/photo-original.jpg?v=1445994074&w=218&h=162&fit=crop&auto=format&q=92&s=f7ad5de5efe4e9ecaeccb1059a566752', u'Columbus, OH', u'2015-11-29', 36, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 30, 980860), 1, 1, 1, 8])
+2015-10-28 15:19:30 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'1803 Bacon',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-11-29',
+ 'id': u'1643559920',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/1979220/photo-original.jpg?v=1445994074&w=218&h=162&fit=crop&auto=format&q=92&s=f7ad5de5efe4e9ecaeccb1059a566752',
+ 'location': u'Columbus, OH',
+ 'pledged': u'36',
+ 'project_url': u'https://www.kickstarter.com/projects/1643559920/1803-bacon-and-brews-columbus-ohio',
+ 'title': u'1803 Bacon & Brews  - Columbus Ohio',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:30 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'327246709'])
+2015-10-28 15:19:30 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'327246709', u'"In The Galley" With Barnacle Bob, Seafood Cookbook', u'"Barnacle Bob" Leatherwood', u'https://www.kickstarter.com/projects/327246709/in-the-galley-with-barnacle-bob-seafood-cookbook', u'https://ksr-ugc.imgix.net/projects/2155360/photo-original.jpg?v=1445974478&w=218&h=162&fit=crop&auto=format&q=92&s=0d3cae092107ed4dc756cb136fc8e95a', u'Kemah, TX', u'2015-11-25', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 30, 989313), 1, 1, 1, 8])
+2015-10-28 15:19:30 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'"Barnacle Bob" Leatherwood',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-11-25',
+ 'id': u'327246709',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2155360/photo-original.jpg?v=1445974478&w=218&h=162&fit=crop&auto=format&q=92&s=0d3cae092107ed4dc756cb136fc8e95a',
+ 'location': u'Kemah, TX',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/327246709/in-the-galley-with-barnacle-bob-seafood-cookbook',
+ 'title': u'"In The Galley" With Barnacle Bob, Seafood Cookbook',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:30 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1343878981'])
+2015-10-28 15:19:30 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1343878981', u'Ballz Pancake Balls.  Bite-sized pancakes.', u'Adam Schreifels', u'https://www.kickstarter.com/projects/1343878981/ballz-pancake-balls-bite-sized-pancakes', u'https://ksr-ugc.imgix.net/projects/2154471/photo-original.jpg?v=1445875469&w=218&h=162&fit=crop&auto=format&q=92&s=0506485567228621222bf3aad86f5d81', u'Minneapolis, MN', u'2015-11-30', 141, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 30, 997535), 1, 1, 1, 8])
+2015-10-28 15:19:30 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Adam Schreifels',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-11-30',
+ 'id': u'1343878981',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2154471/photo-original.jpg?v=1445875469&w=218&h=162&fit=crop&auto=format&q=92&s=0506485567228621222bf3aad86f5d81',
+ 'location': u'Minneapolis, MN',
+ 'pledged': u'141',
+ 'project_url': u'https://www.kickstarter.com/projects/1343878981/ballz-pancake-balls-bite-sized-pancakes',
+ 'title': u'Ballz Pancake Balls.  Bite-sized pancakes.',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'venicecoldbrew'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'venicecoldbrew', u'Take Your Coffee With Sunshine', u'Venice Cold Brew', u'https://www.kickstarter.com/projects/venicecoldbrew/take-your-coffee-with-sunshine', u'https://ksr-ugc.imgix.net/projects/1926049/photo-original.jpg?v=1445277769&w=218&h=162&fit=crop&auto=format&q=92&s=9b644fba831532d7a311001cfd587de6', u'Venice, Los Angeles, CA', u'2015-11-26', 1725, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 31, 5483), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Venice Cold Brew',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-11-26',
+ 'id': u'venicecoldbrew',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/1926049/photo-original.jpg?v=1445277769&w=218&h=162&fit=crop&auto=format&q=92&s=9b644fba831532d7a311001cfd587de6',
+ 'location': u'Venice, Los Angeles, CA',
+ 'pledged': u'1725',
+ 'project_url': u'https://www.kickstarter.com/projects/venicecoldbrew/take-your-coffee-with-sunshine',
+ 'title': u'Take Your Coffee With Sunshine',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'717351993'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'717351993', u'Westhill Farms Healthy Organic food for the Future!', u'Benjamin Barton & Nathan Klenushin', u'https://www.kickstarter.com/projects/717351993/westhill-farms-healthy-organic-food-for-the-future', u'https://ksr-ugc.imgix.net/projects/2118316/photo-original.jpg?v=1444014027&w=218&h=162&fit=crop&auto=format&q=92&s=16c9965b1b44fa7ce0e01415c9d8f31e', u'Grassy Creek, NC', u'2015-11-26', 1, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 31, 13231), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Benjamin Barton & Nathan Klenushin',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-11-26',
+ 'id': u'717351993',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2118316/photo-original.jpg?v=1444014027&w=218&h=162&fit=crop&auto=format&q=92&s=16c9965b1b44fa7ce0e01415c9d8f31e',
+ 'location': u'Grassy Creek, NC',
+ 'pledged': u'1',
+ 'project_url': u'https://www.kickstarter.com/projects/717351993/westhill-farms-healthy-organic-food-for-the-future',
+ 'title': u'Westhill Farms Healthy Organic food for the Future!',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'920978851'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'920978851', u"Puss N' Books: A relaxing cat cafe and bookstore.", u'Tori', u'https://www.kickstarter.com/projects/920978851/puss-n-books-a-relaxing-cat-cafe-and-bookstore', u'https://ksr-ugc.imgix.net/projects/2152898/photo-original.jpg?v=1445789560&w=218&h=162&fit=crop&auto=format&q=92&s=ea6f0191528f29aeb3e987a1884061fb', u'Bloomington, IL', u'2015-11-26', 422, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 31, 21211), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Tori',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-11-26',
+ 'id': u'920978851',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2152898/photo-original.jpg?v=1445789560&w=218&h=162&fit=crop&auto=format&q=92&s=ea6f0191528f29aeb3e987a1884061fb',
+ 'location': u'Bloomington, IL',
+ 'pledged': u'422',
+ 'project_url': u'https://www.kickstarter.com/projects/920978851/puss-n-books-a-relaxing-cat-cafe-and-bookstore',
+ 'title': u"Puss N' Books: A relaxing cat cafe and bookstore.",
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'popzup'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'popzup', u'Popzup Popper. Microwave Popcorn; Pure & Simple.', u'Marty & Julie Lapham', u'https://www.kickstarter.com/projects/popzup/popzup-popper-microwave-popcorn-pure-and-simple', u'https://ksr-ugc.imgix.net/projects/2109889/photo-original.png?v=1445603824&w=218&h=162&fit=crop&auto=format&q=92&s=d5d62bdd452d663cd01f6a10349856c8', u'Portsmouth, NH', u'2015-12-01', 1820, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 31, 29031), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Marty & Julie Lapham',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-12-01',
+ 'id': u'popzup',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2109889/photo-original.png?v=1445603824&w=218&h=162&fit=crop&auto=format&q=92&s=d5d62bdd452d663cd01f6a10349856c8',
+ 'location': u'Portsmouth, NH',
+ 'pledged': u'1820',
+ 'project_url': u'https://www.kickstarter.com/projects/popzup/popzup-popper-microwave-popcorn-pure-and-simple',
+ 'title': u'Popzup Popper. Microwave Popcorn; Pure & Simple.',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1374291900'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1374291900', u'bitesee.com', u'bitesee', u'https://www.kickstarter.com/projects/1374291900/biteseecom', u'https://ksr-ugc.imgix.net/projects/1697518/photo-original.jpg?v=1444771092&w=218&h=162&fit=crop&auto=format&q=92&s=94de0d14485c0d7dd53a2f973eeeb4e2', u'New York, NY', u'2015-11-25', 5733, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 31, 37354), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'bitesee',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-11-25',
+ 'id': u'1374291900',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/1697518/photo-original.jpg?v=1444771092&w=218&h=162&fit=crop&auto=format&q=92&s=94de0d14485c0d7dd53a2f973eeeb4e2',
+ 'location': u'New York, NY',
+ 'pledged': u'5733',
+ 'project_url': u'https://www.kickstarter.com/projects/1374291900/biteseecom',
+ 'title': u'bitesee.com',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'1110003834'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'1110003834', u'American Cooking Comany - Fresh traditional Food for YOU !', u'Mark Rothaupt', u'https://www.kickstarter.com/projects/1110003834/american-cooking-comany-fresh-traditional-food-for', u'https://ksr-ugc.imgix.net/projects/2136519/photo-original.jpg?v=1444905129&w=218&h=162&fit=crop&auto=format&q=92&s=1a674edbc7eec343feee6c555561935a', u'Stadt Frankfurt, Germany', u'2015-11-26', 16, 0, u'EUR', datetime.datetime(2015, 10, 28, 15, 19, 31, 46123), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Mark Rothaupt',
+ 'category_id': 8,
+ 'currency': u'EUR',
+ 'end': u'2015-11-26',
+ 'id': u'1110003834',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2136519/photo-original.jpg?v=1444905129&w=218&h=162&fit=crop&auto=format&q=92&s=1a674edbc7eec343feee6c555561935a',
+ 'location': u'Stadt Frankfurt, Germany',
+ 'pledged': u'16',
+ 'project_url': u'https://www.kickstarter.com/projects/1110003834/american-cooking-comany-fresh-traditional-food-for',
+ 'title': u'American Cooking Comany - Fresh traditional Food for YOU !',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'257033907'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'257033907', u'Urban Huntsman Brewing', u'Alex Evans', u'https://www.kickstarter.com/projects/257033907/urban-huntsman-brewing', u'https://ksr-ugc.imgix.net/projects/2136487/photo-original.jpg?v=1444902417&w=218&h=162&fit=crop&auto=format&q=92&s=6369836ee8691a8846669fe24567a502', u'West Midlands, UK', u'2015-11-26', 135, 0, u'GBP', datetime.datetime(2015, 10, 28, 15, 19, 31, 54080), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Alex Evans',
+ 'category_id': 8,
+ 'currency': u'GBP',
+ 'end': u'2015-11-26',
+ 'id': u'257033907',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2136487/photo-original.jpg?v=1444902417&w=218&h=162&fit=crop&auto=format&q=92&s=6369836ee8691a8846669fe24567a502',
+ 'location': u'West Midlands, UK',
+ 'pledged': u'135',
+ 'project_url': u'https://www.kickstarter.com/projects/257033907/urban-huntsman-brewing',
+ 'title': u'Urban Huntsman Brewing',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'363562710'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'363562710', u'RG Fitness Food - Healthy Meal Preparation Service + More', u'Ramoan', u'https://www.kickstarter.com/projects/363562710/rg-fitness-food-healthy-meal-preparation-service-m', u'https://ksr-ugc.imgix.net/projects/2150007/photo-original.PNG?v=1445608621&w=218&h=162&fit=crop&auto=format&q=92&s=581c47b4dac150bf0494c20203dd745c', u'London, UK', u'2015-11-26', 10, 0, u'GBP', datetime.datetime(2015, 10, 28, 15, 19, 31, 61887), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Ramoan',
+ 'category_id': 8,
+ 'currency': u'GBP',
+ 'end': u'2015-11-26',
+ 'id': u'363562710',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2150007/photo-original.PNG?v=1445608621&w=218&h=162&fit=crop&auto=format&q=92&s=581c47b4dac150bf0494c20203dd745c',
+ 'location': u'London, UK',
+ 'pledged': u'10',
+ 'project_url': u'https://www.kickstarter.com/projects/363562710/rg-fitness-food-healthy-meal-preparation-service-m',
+ 'title': u'RG Fitness Food - Healthy Meal Preparation Service + More',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'474435350'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'474435350', u'Black Frog Brewery Tap Room', u'Black Frog Brewery', u'https://www.kickstarter.com/projects/474435350/black-frog-brewery-tap-room', u'https://ksr-ugc.imgix.net/projects/2128127/photo-original.jpg?v=1445475843&w=218&h=162&fit=crop&auto=format&q=92&s=1d323e062d19c4cb2d03a0b67009b6cf', u'Toledo, OH', u'2015-12-01', 550, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 31, 70228), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Black Frog Brewery',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-12-01',
+ 'id': u'474435350',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2128127/photo-original.jpg?v=1445475843&w=218&h=162&fit=crop&auto=format&q=92&s=1d323e062d19c4cb2d03a0b67009b6cf',
+ 'location': u'Toledo, OH',
+ 'pledged': u'550',
+ 'project_url': u'https://www.kickstarter.com/projects/474435350/black-frog-brewery-tap-room',
+ 'title': u'Black Frog Brewery Tap Room',
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'600258854'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'600258854', u"The Best Coffee You've Ever Made... Now in a Pod", u'Pact Coffee', u'https://www.kickstarter.com/projects/600258854/the-best-coffee-youve-ever-made-now-in-a-pod', u'https://ksr-ugc.imgix.net/projects/1992238/photo-original.jpg?v=1445875562&w=218&h=162&fit=crop&auto=format&q=92&s=034ae3e2a37afec66e6b354a46e2ae17', u'London, UK', u'2015-11-16', 15105, 0, u'GBP', datetime.datetime(2015, 10, 28, 15, 19, 31, 77930), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Pact Coffee',
+ 'category_id': 8,
+ 'currency': u'GBP',
+ 'end': u'2015-11-16',
+ 'id': u'600258854',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/1992238/photo-original.jpg?v=1445875562&w=218&h=162&fit=crop&auto=format&q=92&s=034ae3e2a37afec66e6b354a46e2ae17',
+ 'location': u'London, UK',
+ 'pledged': u'15105',
+ 'project_url': u'https://www.kickstarter.com/projects/600258854/the-best-coffee-youve-ever-made-now-in-a-pod',
+ 'title': u"The Best Coffee You've Ever Made... Now in a Pod",
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'286769827'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'286769827', u"Po Tato's Food Truck", u'Rile', u'https://www.kickstarter.com/projects/286769827/po-tatos-food-truck', u'https://ksr-ugc.imgix.net/projects/2149142/photo-original.png?v=1445880536&w=218&h=162&fit=crop&auto=format&q=92&s=18ca82755b5e1277855d3e3a22be8d5b', u'Stillwater, OK', u'2015-11-25', 1, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 31, 86039), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Rile',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-11-25',
+ 'id': u'286769827',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2149142/photo-original.png?v=1445880536&w=218&h=162&fit=crop&auto=format&q=92&s=18ca82755b5e1277855d3e3a22be8d5b',
+ 'location': u'Stillwater, OK',
+ 'pledged': u'1',
+ 'project_url': u'https://www.kickstarter.com/projects/286769827/po-tatos-food-truck',
+ 'title': u"Po Tato's Food Truck",
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'661624087'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'661624087', u"Ruth Marie's  Gourmet Pecan Pies", u'Denise Holmes', u'https://www.kickstarter.com/projects/661624087/ruth-maries-gourmet-pecan-pies', u'https://ksr-ugc.imgix.net/projects/2122647/photo-original.JPG?v=1445358750&w=218&h=162&fit=crop&auto=format&q=92&s=5f85080696e2f4dad2e4f0a958cbc216', u'Houston, TX', u'2015-11-20', 0, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 31, 93589), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Denise Holmes',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-11-20',
+ 'id': u'661624087',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2122647/photo-original.JPG?v=1445358750&w=218&h=162&fit=crop&auto=format&q=92&s=5f85080696e2f4dad2e4f0a958cbc216',
+ 'location': u'Houston, TX',
+ 'pledged': u'0',
+ 'project_url': u'https://www.kickstarter.com/projects/661624087/ruth-maries-gourmet-pecan-pies',
+ 'title': u"Ruth Marie's  Gourmet Pecan Pies",
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`second_id` = %s) LIMIT 1', [u'bmy'])
+2015-10-28 15:19:31 [peewee] DEBUG: ('INSERT INTO `app_project` (`second_id`, `title`, `author`, `project_url`, `img_url`, `location`, `end`, `pledged`, `goal`, `currency`, `date_modified`, `active`, `website`, `type`, `category_id`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)', [u'bmy', u"B-My's Homemade FAMOUS Salsa - 100% All Natural Salsa", u'Brian Meyers Jr.', u'https://www.kickstarter.com/projects/bmy/b-mys-homemade-famous-salsa-100-all-natural-salsa', u'https://ksr-ugc.imgix.net/projects/2151892/photo-original.JPG?v=1445714739&w=218&h=162&fit=crop&auto=format&q=92&s=614b35eb45b162517ffb7ee38fb7b7ac', u'York, PA', u'2015-12-25', 287, 0, u'USD', datetime.datetime(2015, 10, 28, 15, 19, 31, 102115), 1, 1, 1, 8])
+2015-10-28 15:19:31 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/discover/categories/food?sort=newest>
+{'author': u'Brian Meyers Jr.',
+ 'category_id': 8,
+ 'currency': u'USD',
+ 'end': u'2015-12-25',
+ 'id': u'bmy',
+ 'img_url': u'https://ksr-ugc.imgix.net/projects/2151892/photo-original.JPG?v=1445714739&w=218&h=162&fit=crop&auto=format&q=92&s=614b35eb45b162517ffb7ee38fb7b7ac',
+ 'location': u'York, PA',
+ 'pledged': u'287',
+ 'project_url': u'https://www.kickstarter.com/projects/bmy/b-mys-homemade-famous-salsa-100-all-natural-salsa',
+ 'title': u"B-My's Homemade FAMOUS Salsa - 100% All Natural Salsa",
+ 'type': 1,
+ 'website': 1}
+2015-10-28 15:19:31 [scrapy] INFO: Closing spider (finished)
+2015-10-28 15:19:31 [scrapy] INFO: Stored jsonlines feed (20 items) in: file:///Users/marko/PythonProjects/cfservis/items/cfservis/kickstarter_getter/e45b73787d7e11e5bcb67831c1c9baf0.jl
+2015-10-28 15:19:31 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 253,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 81884,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2015, 10, 28, 14, 19, 31, 106518),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 62,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2015, 10, 28, 14, 19, 29, 514777)}
+2015-10-28 15:19:31 [scrapy] INFO: Spider closed (finished)

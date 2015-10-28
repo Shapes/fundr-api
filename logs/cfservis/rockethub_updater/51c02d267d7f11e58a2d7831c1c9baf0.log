@@ -1,0 +1,36 @@
+2015-10-28 15:22:44 [scrapy] INFO: Scrapy 1.0.3 started (bot: cfservis)
+2015-10-28 15:22:44 [scrapy] INFO: Optional features available: ssl, http11
+2015-10-28 15:22:44 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'cfservis.spiders', 'SPIDER_MODULES': ['cfservis.spiders'], 'FEED_URI': 'file:///Users/marko/PythonProjects/cfservis/items/cfservis/rockethub_updater/51c02d267d7f11e58a2d7831c1c9baf0.jl', 'LOG_FILE': 'logs/cfservis/rockethub_updater/51c02d267d7f11e58a2d7831c1c9baf0.log', 'BOT_NAME': 'cfservis'}
+2015-10-28 15:22:44 [scrapy] INFO: Enabled extensions: CloseSpider, FeedExporter, TelnetConsole, LogStats, CoreStats, SpiderState
+2015-10-28 15:22:44 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-10-28 15:22:44 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-10-28 15:22:44 [scrapy] INFO: Enabled item pipelines: MySQLStorePipeline
+2015-10-28 15:22:44 [scrapy] INFO: Spider opened
+2015-10-28 15:22:44 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-10-28 15:22:44 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-10-28 15:22:45 [scrapy] DEBUG: Crawled (200) <GET https://www.rockethub.com/projects/61452-i-want-to-make-the-white-room-ep-with-you> (referer: None)
+2015-10-28 15:22:45 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1', [1718])
+2015-10-28 15:22:45 [peewee] DEBUG: ('UPDATE `app_project` SET `second_id` = %s, `title` = %s, `author` = %s, `project_url` = %s, `img_url` = %s, `location` = %s, `end` = %s, `pledged` = %s, `goal` = %s, `currency` = %s, `date_modified` = %s, `active` = %s, `website` = %s, `type` = %s, `category_id` = %s WHERE (`app_project`.`id` = %s)', [u'61452', u'I want to make The White Room EP with you.', u'Allison Veltz', u'https://www.rockethub.com/projects/61452-i-want-to-make-the-white-room-ep-with-you', u'https://rockethub-images-production.s3.amazonaws.com/images/61452/1445261025-large.jpg', u'Nashville, TN', u'2015-11-18', 7526, 6500, u'USD', datetime.datetime(2015, 10, 28, 15, 22, 45, 383152), 1, 3, 1, 6, 1718])
+2015-10-28 15:22:45 [scrapy] DEBUG: Scraped from <200 https://www.rockethub.com/projects/61452-i-want-to-make-the-white-room-ep-with-you>
+{'goal': u'6500', 'id': '1718', 'pledged': u'0'}
+2015-10-28 15:22:45 [scrapy] INFO: Closing spider (finished)
+2015-10-28 15:22:45 [scrapy] INFO: Stored jsonlines feed (1 items) in: file:///Users/marko/PythonProjects/cfservis/items/cfservis/rockethub_updater/51c02d267d7f11e58a2d7831c1c9baf0.jl
+2015-10-28 15:22:45 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 271,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 5269,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2015, 10, 28, 14, 22, 45, 388682),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 5,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2015, 10, 28, 14, 22, 44, 541591)}
+2015-10-28 15:22:45 [scrapy] INFO: Spider closed (finished)
