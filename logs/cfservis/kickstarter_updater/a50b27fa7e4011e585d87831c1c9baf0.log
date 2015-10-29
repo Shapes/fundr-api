@@ -1,0 +1,36 @@
+2015-10-29 14:26:24 [scrapy] INFO: Scrapy 1.0.3 started (bot: cfservis)
+2015-10-29 14:26:24 [scrapy] INFO: Optional features available: ssl, http11
+2015-10-29 14:26:24 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'cfservis.spiders', 'FEED_URI': 'file:///Users/marko/PythonProjects/cfservis/items/cfservis/kickstarter_updater/a50b27fa7e4011e585d87831c1c9baf0.jl', 'SPIDER_MODULES': ['cfservis.spiders'], 'BOT_NAME': 'cfservis', 'LOG_FILE': 'logs/cfservis/kickstarter_updater/a50b27fa7e4011e585d87831c1c9baf0.log', 'DOWNLOAD_DELAY': 3}
+2015-10-29 14:26:24 [scrapy] INFO: Enabled extensions: CloseSpider, FeedExporter, TelnetConsole, LogStats, CoreStats, SpiderState
+2015-10-29 14:26:24 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2015-10-29 14:26:24 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2015-10-29 14:26:24 [scrapy] INFO: Enabled item pipelines: MySQLStorePipeline
+2015-10-29 14:26:24 [scrapy] INFO: Spider opened
+2015-10-29 14:26:24 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-10-29 14:26:24 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2015-10-29 14:26:25 [scrapy] DEBUG: Crawled (200) <GET https://www.kickstarter.com/projects/1849488617/see-you-at-the-fair-picture-cards> (referer: None)
+2015-10-29 14:26:26 [peewee] DEBUG: ('SELECT `t1`.`id`, `t1`.`second_id`, `t1`.`title`, `t1`.`author`, `t1`.`project_url`, `t1`.`img_url`, `t1`.`location`, `t1`.`end`, `t1`.`pledged`, `t1`.`goal`, `t1`.`currency`, `t1`.`date_modified`, `t1`.`active`, `t1`.`website`, `t1`.`type`, `t1`.`category_id` FROM `app_project` AS t1 WHERE (`t1`.`id` = %s) LIMIT 1', [1870])
+2015-10-29 14:26:26 [peewee] DEBUG: ('UPDATE `app_project` SET `second_id` = %s, `title` = %s, `author` = %s, `project_url` = %s, `img_url` = %s, `location` = %s, `end` = %s, `pledged` = %s, `goal` = %s, `currency` = %s, `date_modified` = %s, `active` = %s, `website` = %s, `type` = %s, `category_id` = %s WHERE (`app_project`.`id` = %s)', [u'1849488617', u'See You At the Fair! Picture Cards', u'Studio Hades / Acheron Mint', u'https://www.kickstarter.com/projects/1849488617/see-you-at-the-fair-picture-cards', u'https://ksr-ugc.imgix.net/projects/2018822/photo-original.jpg?v=1445989295&w=218&h=162&fit=crop&auto=format&q=92&s=32d7e3510e7fae7f0ad5edcd5b247065', u'Scottsdale, AZ', u'2015-11-26', 754, 575, u'USD', datetime.datetime(2015, 10, 29, 14, 26, 26, 5006), 1, 1, 1, 2, 1870])
+2015-10-29 14:26:26 [scrapy] DEBUG: Scraped from <200 https://www.kickstarter.com/projects/1849488617/see-you-at-the-fair-picture-cards>
+{'goal': u'575', 'id': '1870', 'pledged': u'754'}
+2015-10-29 14:26:26 [scrapy] INFO: Closing spider (finished)
+2015-10-29 14:26:26 [scrapy] INFO: Stored jsonlines feed (1 items) in: file:///Users/marko/PythonProjects/cfservis/items/cfservis/kickstarter_updater/a50b27fa7e4011e585d87831c1c9baf0.jl
+2015-10-29 14:26:26 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 270,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 75103,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2015, 10, 29, 13, 26, 26, 31502),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 5,
+ 'log_count/INFO': 8,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2015, 10, 29, 13, 26, 24, 861058)}
+2015-10-29 14:26:26 [scrapy] INFO: Spider closed (finished)
