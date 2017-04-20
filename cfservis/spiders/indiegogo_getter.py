@@ -130,7 +130,7 @@ class IndiegogoSpider(scrapy.Spider):
             else:
                 il.add_value('end', 'endet')
 
-            # TODO: fiksni xpath se spreminja!
+            # TODO: fiksni xpatq1qh se spreminja!
             location_city_state = (self.driver.find_elements_by_xpath('//div[3]/div/div[4]/div[2]'))[0].text
             location_country = (self.driver.find_elements_by_xpath('//div[3]/div/div[4]/div[3]'))[0].text
 
